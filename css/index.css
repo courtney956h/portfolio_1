@@ -5,7 +5,7 @@
 
 /* 본문 - 슬라이드 */
 
-body, html, #section, .slideOutter { height: 100%; }
+body, html, #section, .slideOutter { height: 1080px; }
 .slide { width: 1903px; height: 100%; overflow: hidden; }
 .slide .slideInner { background-size: cover;
     background-repeat: no-repeat; height: 896px;

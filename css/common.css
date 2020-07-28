@@ -11,7 +11,7 @@
     padding: 18px 15px; }
 .nav { font-weight: bold; font-size: 12px;
     position: absolute; top: 0; right: 0; }
-.nav .depth1 > li { display: inline-block; position: relative;}
+.nav .depth1 > li { display: inline-block; position: relative; }
 .nav .depth1 > li > a { display: block; 
     margin: 0px 20px; padding: 26px 0px; 
     position: relative; }
@@ -27,3 +27,6 @@
     padding: 9px 0px 7px 30px;
     overflow: hidden; transition: all 0.5s; }
 .nav .depth2 > li > a:hover { color: #fff; }
+
+.nav .depth1 > li > .btn { display: block; font-size: 18px;
+    padding: 0 15px; }
