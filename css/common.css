@@ -2,7 +2,7 @@
 
 .row { width: 1170px; margin: 0 auto; }
 
-/* 공통구역을 제외한 메인페이지 스타일 */
+/* 헤더 부분 */
 #header { color: #000; }
 .h1NavWrap { font-family: 'Montserrat','나눔고딕'; }
 .h1Nav { height: 72px; position: relative; }
@@ -30,3 +30,32 @@
 
 .nav .depth1 > li > .btn { display: block; font-size: 18px;
     padding: 0 15px; }
+
+
+
+/* footer 부분 */
+#footer { background: #1c1c1c; }
+#footer .inner { padding: 5% 0; display: block; 
+    font-family: 'Roboto'; color: #6f6f6f; 
+    font-size: 12px; position: relative; }
+.inner .BizInfo { width: 24%; padding-right: 15px; float: left; }
+.inner .BizInfo > a { display: inline-block; font-weight: bold; 
+    font-size: 30px; color: #fff; }
+.inner .BizInfo span { display: inline-block;
+    margin: 24px 0; line-height: 20px; }
+.inner .BizInfo .sns > a { color: #fff; font-size: 17px; margin-right: 20px; }
+
+
+.inner .footerMenu { width: 24%; display: inline-block;
+    padding-left: 45px; }
+.inner .footerMenu ul { display: block; font-weight: bold; }
+.inner .footerMenu ul p { margin-bottom: 10px; }
+.inner .footerMenu li { display: block; font-weight: normal; }
+
+.inner .companyInfo { width: 24%; display: inline-block;
+    padding-left: 45px; }
+.inner .companyInfo > p { font-weight: bold; }
+
+.inner .portfolio { width: 24%; display: inline-block;
+    padding-left: 45px; }
+.inner .portfolio > p { font-weight: bold; }
