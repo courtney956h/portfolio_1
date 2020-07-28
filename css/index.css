@@ -32,7 +32,7 @@
     margin-right: 10px;}
 .slide .bottom_btn a:nth-child(1):hover { color: #232323;
     background: transparent; border: 2px solid #232323;
-    transition: all 1.5; }
+    transition: all 1.5s; }
 
 .slide .bottom_btn a:nth-child(2){ padding: 10px 35px;
     color: #232323; font-weight: bold;
@@ -40,7 +40,7 @@
     border-radius: 50px; letter-spacing: 0.5px;}
 .slide .bottom_btn a:nth-child(2):hover { color: #fff;
     background: #232323; border: 2px solid transparent;
-    transition: all 1.5; }
+    transition: all 1.5s; }
 
 .slide .dotBox { display: inline-block; color: #000;
-    height: 9px; width: 9px; border-radius: 50%; }
+    height: 9px; width: 9px; border-radius: 100%; }
