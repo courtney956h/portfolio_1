@@ -15,7 +15,7 @@
 .slide .slideInner:nth-child(3) { background-image: url(../images/main3.jpg); }
 
 .slide .text { text-align: left; position: absolute;
-    top: 50%; left: 19%; color: #232323;
+    top: 40%; left: 19%; color: #232323;
     font-weight: 'Montserrat';
     padding: 0 15px; width: 1104px; height: auto; }
 .slide .text h2 { font-size: 70px;
