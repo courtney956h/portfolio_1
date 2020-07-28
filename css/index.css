@@ -3,10 +3,10 @@
 @import "common.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
-/* 본문 - 슬라이드 */
 
+/* 슬라이드 본문*/
 .slideOuter { height: 1080px; overflow: hidden; }
-.slide { width: 1903px; height: 100%; }
+.slide { width: 1903px; height: 100%; position: relative; }
 .slide .slideInner { background-size: cover; 
     background-repeat: no-repeat; height: 1080px;
     position: relative; background-position: center; }
@@ -24,6 +24,7 @@
 .slide .text p { font-size: 18px; font-family: 'Roboto';
     margin-bottom: 45px;  }
 
+/* 슬라이드 버튼 */
 .slide .bottom_btn { font-size: 11px; }
 .slide .bottom_btn a:nth-child(1){ padding: 10px 35px;
     color: #fff; font-weight: bold;
@@ -42,5 +43,10 @@
     background: #232323; border: 2px solid transparent;
     transition: all 1.5s; }
 
-.slide .dotBox { display: inline-block; color: #000;
-    height: 9px; width: 9px; border-radius: 100%; }
+/* 슬라이드 도트 */
+.slideOuter .dotBox { position: absolute; bottom: 20px; width: 100%;
+    text-align: center; }
+.slideOuter .dotBox a { display: inline-block;
+    background: #000; margin: 0 5px;
+    height: 9px; width: 9px; border-radius: 50%; }
+.slideOuter .dotBox a.active { background: ); } 
