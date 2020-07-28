@@ -3,7 +3,7 @@
 .row { width: 1170px; margin: 0 auto; }
 
 /* 공통구역을 제외한 메인페이지 스타일 */
-#header { color: #000; width: 100%; }
+#header { color: #000; width: 100%; text-decoration: none; }
 .h1NavWrap { font-family: 'Montserrat','나눔고딕'; }
 .h1Nav { height: 72px; position: relative; }
 .h1Nav h1 { font-weight: bold;
