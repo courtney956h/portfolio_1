@@ -5,10 +5,10 @@
 
 /* 본문 - 슬라이드 */
 
-body, html, #section, .slideOutter { height: 1080px; }
-.slide { width: 1903px; height: 100%; overflow: hidden; }
-.slide .slideInner { background-size: cover;
-    background-repeat: no-repeat; height: 896px;
+.slideOuter { height: 1080px; overflow: hidden; }
+.slide { width: 1903px; height: 100%; }
+.slide .slideInner { background-size: cover; 
+    background-repeat: no-repeat; height: 1080px;
     position: relative; background-position: center; }
 .slide .slideInner:nth-child(1) { background-image: url(../images/main1.jpg); }
 .slide .slideInner:nth-child(2) { background-image: url(../images/main2.jpg); }
@@ -41,3 +41,6 @@ body, html, #section, .slideOutter { height: 1080px; }
 .slide .bottom_btn a:nth-child(2):hover { color: #fff;
     background: #232323; border: 2px solid transparent;
     transition: all 1.5; }
+
+.slide .dotBox { display: inline-block; color: #000;
+    height: 9px; width: 9px; border-radius: 50%; }
