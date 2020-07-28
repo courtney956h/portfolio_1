@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* 본문 - 슬라이드 */
+
+body, html, #section, .slideOutter { height: 100%; }
+.slide { width: 1903px; height: 100%; overflow: hidden; }
+.slide .slideInner { background-size: cover;
+    background-repeat: no-repeat; height: 896px;
+    position: relative; background-position: center; }
+.slide .slideInner:nth-child(1) { background-image: url(../images/main1.jpg); }
+.slide .slideInner:nth-child(2) { background-image: url(../images/main2.jpg); }
+.slide .slideInner:nth-child(3) { background-image: url(../images/main3.jpg); }
+
+.slide .text { text-align: left; position: absolute;
+    top: 50%; left: 19%; color: #232323;
+    font-weight: 'Montserrat';
+    padding: 0 15px; width: 1104px; height: auto; }
+.slide .text h2 { font-size: 70px;
+    font-weight: bold; width: 627px; 
+    margin-bottom: 35px; }
+.slide .text p { font-size: 18px; font-family: 'Roboto';
+    margin-bottom: 45px;  }
+
+.slide .bottom_btn { font-size: 11px; }
+.slide .bottom_btn a:nth-child(1){ padding: 10px 35px;
+    color: #fff; font-weight: bold;
+    background: #232323; border: 2px solid transparent;
+    border-radius: 50px; letter-spacing: 0.5px; 
+    margin-right: 10px;}
+.slide .bottom_btn a:nth-child(1):hover { color: #232323;
+    background: transparent; border: 2px solid #232323;
+    transition: all 1.5; }
+
+.slide .bottom_btn a:nth-child(2){ padding: 10px 35px;
+    color: #232323; font-weight: bold;
+    background: transparent; border: 2px solid #232323;
+    border-radius: 50px; letter-spacing: 0.5px;}
+.slide .bottom_btn a:nth-child(2):hover { color: #fff;
+    background: #232323; border: 2px solid transparent;
+    transition: all 1.5; }

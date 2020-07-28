@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.row { width: 1170px; margin: 0 auto; }
+
+/* 공통구역을 제외한 메인페이지 스타일 */
+#header { color: #000; width: 100%; }
+.h1NavWrap { font-family: 'Montserrat','나눔고딕'; }
+.h1Nav { height: 72px; position: relative; }
+.h1Nav h1 { font-weight: bold;
+    font-size: 30px; 
+    padding: 18px 15px; }
+.nav { font-weight: bold; font-size: 12px;
+    position: absolute; top: 0; right: 0; }
+.nav .depth1 > li { display: inline-block; position: relative;}
+.nav .depth1 > li > a { display: block; 
+    margin: 0px 20px; padding: 26px 0px; 
+    position: relative; }
+
+.nav .depth2 { position: absolute; top: 100%; left: 0;
+    width: 220px; padding: 13px 0 15px; 
+    background: rgba(35,35,35,1); 
+    display: none; }
+.nav .depth1 > li:hover .depth2 { display: block; }
+
+.nav .depth2 > li > a { display: block; text-align: left;
+    font-size: 12px; color:#9d9d9d; 
+    padding: 9px 0px 7px 30px;
+    overflow: hidden; transition: all 0.5s; }
+.nav .depth2 > li > a:hover { color: #fff; }
