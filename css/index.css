@@ -49,4 +49,4 @@
 .slideOuter .dotBox a { display: inline-block;
     background: #000; margin: 0 5px;
     height: 9px; width: 9px; border-radius: 50%; }
-.slideOuter .dotBox a.active { background: ); } 
+.slideOuter .dotBox a.active { background: #fff; } 

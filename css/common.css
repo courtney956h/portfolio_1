@@ -5,7 +5,8 @@
 /* 공통구역을 제외한 메인페이지 스타일 */
 #header { color: #000; }
 .h1NavWrap { font-family: 'Montserrat','나눔고딕'; }
-.h1Nav { height: 72px; position: relative; }
+.h1Nav { height: 72px; position: relative; 
+    z-index: 999999;}
 .h1Nav h1 { font-weight: bold;
     font-size: 30px; 
     padding: 18px 15px; }
