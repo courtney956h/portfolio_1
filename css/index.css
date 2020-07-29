@@ -111,3 +111,23 @@
 .step3 ul li div  p { font-family: 'Roboto'; color: #6f6f6f;
     font-size: 14px; font-weight: 400; line-height: 24px; } 
 
+
+.step4 { padding: 130px 0; font-family: 'Montserrat';
+    background: #f7f7f7; text-align: center; }
+.step4_h { margin-bottom: 8%; padding: 0 15px; width: 41%; }
+.step4_h p { margin-bottom: 5px; font-size: 12px; 
+    line-height: 20px; font-weight: 500; color: #939393; }
+.step4_h h2 { margin-bottom: 25px; font-size: 32px; 
+    line-height: 40px; font-weight: 600; color: #232323; }
+.step4 ul li { display: inline-block; width: 31%;
+    margin: 10px 10px; background: #fff; }
+
+.step4 ul li .g_img { cursor: pointer; }
+.step4 ul li .g_img:hover { background: #ff5519; }
+.step4 ul li .g_img > img { width: 100%; height: auto; }
+.step4 ul li .g_content { padding: 25px 10px; }
+.step4 ul li a { color: #232323; font-weight: 600;
+    font-family: 'Montserrat'; font-size: 12px;
+    margin-bottom: 5px; }
+.step4 ul li p { color: #939393; line-height: 14px;
+    font-family: 'Montserrat'; font-size: 11px; }
