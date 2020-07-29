@@ -70,8 +70,9 @@
 
 .step2 { background: #f7f7f7; }
 .container_fluid .sample_img { width: 50%; float: left; }
-.sample_text { width: 50%; float: left;
-    padding: 95px; }
+.sample_img > img { width: 100%; height: 641px; }
+.sample_text { width: 50%; height: 641px; 
+    float: left; padding: 95px; }
 .sample_text h4 { color: #232323; font-weight: 600;
     font-size: 40px; line-height: 46px;
     margin-bottom: 50px; font-family: 'Monserrat'; }
@@ -79,7 +80,7 @@
 .sample_text .sample_con .ex1,
 .sample_text .sample_con .ex3 { margin-bottom: 8%; }
 .sample_text .sample_con i { font-size: 35px;
-    float: left; }
+    float: left; color: #939393; }
 .sample_text .sample_con span { color: #232323; 
     font-family: 'Monserrat'; font-weight: 600; 
     margin-bottom: 5px; font-size: 14px; 
@@ -91,3 +92,20 @@
 
 
 .step3 { padding: 130px 0; }
+.step3 ul li { width: 22%; margin: 0 15px;
+    display: inline-block; height: 199px; 
+    position: relative; 
+    border: 1px solid #ededed; }
+.step3 ul li:hover { border: 6px solid #ff5519;
+    transition: all 0.5s; }
+.step3 ul li div { width: 100%; 
+    font-size: 25px; font-weight: 600; 
+    line-height: 30px; font-family: 'Montserrat';
+    text-align: center; 
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%); }
+.step3 ul li div i { color: #939393; font-size: 35px;
+    margin-bottom: 15px; line-height: 1.1; }
+.step3 ul li div  p { font-family: 'Roboto'; color: #6f6f6f;
+    font-size: 14px; font-weight: 400; line-height: 24px; } 
+
