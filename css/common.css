@@ -49,6 +49,7 @@
 .inner .BizInfo span { display: inline-block;
     margin: 24px 0; line-height: 20px; }
 .inner .BizInfo .sns > a { color: #fff; font-size: 17px; margin-right: 20px; }
+.inner .BizInfo .sns > a:hover { color: #ff5519; transition: all 0.5s; }
 
 
 .inner .footerMenu { width: 24%; display: block; float: left;
@@ -58,7 +59,7 @@
 .inner .footerMenu ul p { font-family: 'Montserrat'; margin-bottom: 10px; }
 .inner .footerMenu li { display: block; font-weight: normal;
     line-height: 24px; }
-.inner .footerMenu li:hover { color: #f1341b; transition: all 0.5s; }
+.inner .footerMenu li:hover { color: #ff5519; transition: all 0.5s; }
 
 
 .inner .companyInfo { width: 24%; display: block;
@@ -68,7 +69,7 @@
     margin-bottom: 10px; font-family: 'Montserrat'; }
 .inner .companyInfo address { margin-bottom: 15px; }
 .inner .companyInfo span:last-child { text-decoration: underline; }
-.inner .companyInfo span a:hover { color: #f1341b; transition: all 0.5s; }
+.inner .companyInfo span a:hover { color: #ff5519; transition: all 0.5s; }
 
 
 .inner .portfolio { width: 24%; display: block;
