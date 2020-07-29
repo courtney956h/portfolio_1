@@ -119,11 +119,17 @@
     line-height: 20px; font-weight: 500; color: #939393; }
 .step4_h h2 { margin-bottom: 25px; font-size: 32px; 
     line-height: 40px; font-weight: 600; color: #232323; }
-.step4 ul li { display: inline-block; width: 31%;
-    margin: 10px 10px; background: #fff; }
 
-.step4 ul li .g_img { cursor: pointer; }
-.step4 ul li .g_img:hover { background: #ff5519; }
+.step4 ul li { display: inline-block; width: 31%;
+    margin: 10px 10px; background: #fff;
+    overflow: hidden; }
+
+.step4 ul li .g_img { cursor: pointer; position: relative; 
+    background: red;}
+.step4 ul li .g_img:hover:after { position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    background: #ff5519;
+    opacity: 0.3; transition: all 0.5s; }
 .step4 ul li .g_img > img { width: 100%; height: auto; }
 .step4 ul li .g_content { padding: 25px 10px; }
 .step4 ul li a { color: #232323; font-weight: 600;
@@ -131,3 +137,10 @@
     margin-bottom: 5px; }
 .step4 ul li p { color: #939393; line-height: 14px;
     font-family: 'Montserrat'; font-size: 11px; }
+
+
+
+.step5 { width: 100% }
+.step5 li { width: 24.79%; display: inline-block;
+     border-right: 1px solid #ededed; }
+.step5 li span { margin: 25px 0 5px; }
