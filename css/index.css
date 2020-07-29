@@ -114,7 +114,7 @@
 
 .step4 { padding: 130px 0; font-family: 'Montserrat';
     background: #f7f7f7; text-align: center; }
-.step4_h { margin-bottom: 8%; padding: 0 15px; width: 41%; }
+.step4_h { margin-bottom: 5%; padding: 0 15px; width: 41%; }
 .step4_h p { margin-bottom: 5px; font-size: 12px; 
     line-height: 20px; font-weight: 500; color: #939393; }
 .step4_h h2 { margin-bottom: 25px; font-size: 32px; 
@@ -141,6 +141,16 @@
 
 
 .step5 { width: 100% }
-.step5 li { width: 24.79%; display: inline-block;
-     border-right: 1px solid #ededed; }
-.step5 li span { margin: 25px 0 5px; }
+.step5 li { width: 24.75%; display: inline-block;
+    border-right: 1px solid #ededed; text-align: center;
+    padding: 0 15px;  border-bottom: 1px solid #ededed;}
+.step5 li:last-child { border-right: none; }
+.step5 li div { padding: 12%; }
+.step5 li i { color: #ff5519; font-size: 50px; 
+    display: block; }
+.step5 li span { font-size: 14px; color: #232323;
+    font-weight: 600; font-family: 'Montserrat'; 
+    display: block; margin: 25px 0 5px; line-height: 24px; }
+.step5 li p { font-size: 14px; color: #6f6f6f;
+    font-family: 'Roboto'; font-weight: 400;
+    line-height: 24px; }
