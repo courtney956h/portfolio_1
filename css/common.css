@@ -20,6 +20,7 @@
     width: 220px; padding: 13px 0 15px; 
     background: rgba(35,35,35,1); 
     display: none; }
+/* 만약 depth2가 아닌 header가 position 갖게 되면 header한테 z-index를 줘야함 */
 .nav .depth1 > li:hover .depth2 { display: block; }
 
 .nav .depth2 > li > a { display: block; text-align: left;
@@ -33,12 +34,16 @@
 
 
 
+
+
 /* footer 부분 */
-#footer { background: #1c1c1c; }
-#footer .inner { padding: 5% 0; display: block; 
-    font-family: 'Roboto'; color: #6f6f6f; 
+#footer .footer { background: #1c1c1c; }
+#footer .inner { display: block; padding: 5% 0; height: 389px;
+    font-family: 'Roboto'; color: #6f6f6f; line-height: 20px; 
     font-size: 12px; position: relative; }
-.inner .BizInfo { width: 24%; padding-right: 15px; float: left; }
+
+.inner .BizInfo { width: 24%; padding: 0 15px 0 15px; float: left;
+    border-right: 1px solid #363636; height: 199px; }
 .inner .BizInfo > a { display: inline-block; font-weight: bold; 
     font-size: 30px; color: #fff; }
 .inner .BizInfo span { display: inline-block;
@@ -46,16 +51,36 @@
 .inner .BizInfo .sns > a { color: #fff; font-size: 17px; margin-right: 20px; }
 
 
-.inner .footerMenu { width: 24%; display: inline-block;
-    padding-left: 45px; }
-.inner .footerMenu ul { display: block; font-weight: bold; }
-.inner .footerMenu ul p { margin-bottom: 10px; }
-.inner .footerMenu li { display: block; font-weight: normal; }
+.inner .footerMenu { width: 24%; display: block; float: left;
+    padding: 0 15px 0 45px; border-right: 1px solid #363636; height: 199px; }
+.inner .footerMenu ul { display: block; font-weight: bold;
+    margin-bottom: 25px; }
+.inner .footerMenu ul p { font-family: 'Montserrat'; margin-bottom: 10px; }
+.inner .footerMenu li { display: block; font-weight: normal;
+    line-height: 24px; }
+.inner .footerMenu li:hover { color: #f1341b; transition: all 0.5s; }
 
-.inner .companyInfo { width: 24%; display: inline-block;
-    padding-left: 45px; }
-.inner .companyInfo > p { font-weight: bold; }
 
-.inner .portfolio { width: 24%; display: inline-block;
-    padding-left: 45px; }
-.inner .portfolio > p { font-weight: bold; }
+.inner .companyInfo { width: 24%; display: block;
+    padding: 0 15px 0 45px; float: left;
+    border-right: 1px solid #363636; height: 199px; }
+.inner .companyInfo p { display: block; font-weight: bold;
+    margin-bottom: 10px; font-family: 'Montserrat'; }
+.inner .companyInfo address { margin-bottom: 15px; }
+.inner .companyInfo span:last-child { text-decoration: underline; }
+.inner .companyInfo span a:hover { color: #f1341b; transition: all 0.5s; }
+
+
+.inner .portfolio { width: 24%; display: block;
+    padding: 0 15px 0 45px; float: left; height: 199px; }
+.inner .portfolio p { font-weight: bold; font-family: 'Montserrat'; }
+
+
+
+.copy { font-size: 12px; color: #6f6f6f;
+    background: #141414; }
+.copyright { padding: 60px 0; }
+.copyright p:first-child { display: block; width: 49.5%;
+    float: left; text-align: left; padding: 0 15px; }
+.copyright p:last-child { display: block; width: 49.5%; 
+    float: left; text-align: right; padding: 0 15px; }
