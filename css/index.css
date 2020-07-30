@@ -230,13 +230,14 @@
 
 .step8 ul li .clients_re p { font-size: 14px; color: #6f6f6f;
     font-weight: 400; line-height: 24px; margin-bottom: 25px; }
-.step8 ul li .clients_re span { line-height: 10px; 
+.step8 ul li .clients_re span:nth-of-type(1) { line-height: 10px; 
     font-family: 'Montserrat'; font-size: 12px;
     font-weight: 600; color: #232323; 
     display: inline-block; }
-.step8 ul li .clients_re > span:last-child { line-height: 14px; 
+.step8 ul li .clients_re span:nth-of-type(2) { line-height: 14px; 
     font-weight: 400; color: #939393; font-size: 11px;
-    display: inline-block; font-family: 'Roboto'; } /* 질문할것!!! */
+    display: inline-block; font-family: 'Roboto'; }
+    
 /*step8 도트 */
 .step8 .dotBox { position: absolute; bottom: -35px; width: 100%;
     text-align: center; }
