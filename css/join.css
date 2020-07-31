@@ -37,27 +37,38 @@
     position: absolute; left: 3px; top: 3px;
     color: #f00;  font-size: 13px; font-weight: bold; }
 
-.join_content .info_list { padding-bottom: 20px; }
+.join_content .info_list { border-bottom: 2px solid #000; }
 .join_content .tit_lbl { display: inline-block;
     background: #f4f4f4; 
-    width: 20%; line-height: 40px;
-    font-size: 13px; font-weight: bold;
+    width: 20%; line-height: 40px; vertical-align: top;
+    font-size: 13px; font-weight: bold; font-family: 'Roboto';
     letter-spacing: -2px; padding-left: 20px; }
 .join_content .info_content { display: inline-block;
-    width: 50%; vertical-align: middle; }
+    width: 50%; }
 .join_content .info_content input[type=text],
 .join_content .info_content input[type=password],
 .join_content .info_content select { height: 30px; 
-    border: 1px solid #ccc; 
-    padding: 0 1em; vertical-align: middle; }
-.join_content .info_content span { font-size: 13px; color: #999; }
+    border: 1px solid #ccc; margin-top: 5px;
+    padding: 0 1em; vertical-align: top; }
+.join_content .info_content span { font-size: 13px; color: #999; 
+    display: inline-block; line-height: 40px; }
 
-.join_content .w200 { width: 200px; }
+.join_content .w80 { width: 80px; }
 .join_content .w100 { width: 100px; }
 .join_content .w120 { width: 120px; }
+.join_content .w200 { width: 200px; }
+.join_content .w370 { width: 370px; }
 
 
 .join_content .info_content label { margin-right: 10px;
-    font-size: 13px; }
+    font-size: 13px; line-height: 40px; color: #222; }
 
+.join_content .info_content button { height: 30px;
+    width: 50px; border: none; background: #000;
+    font-size: 13px; font-family: 'Roboto';
+    color: #fff; margin-top: 5px; }
 
+.join_box .join_btn { height: 50px; width: 200px;
+    border: none; background: #000;
+    font-size: 15px; font-family: 'Roboto';
+    color: #fff; margin-bottom: 40px;}

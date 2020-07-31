@@ -119,9 +119,86 @@
                                     </div>
                                 </li>
                                 <li>
+                                    <label for="name_lbl" class="tit_lbl pilsoo_item">성별</label>
+                                    <div class="info_content gender_area">
+                                        <input type="radio" name="email" id="male" value="남성">
+                                        <label for="male">남성</label>
+                                        <input type="radio" name="email" id="female" value="여성">
+                                        <label for="female">여성</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="birth_lbl" class="tit_lbl pilsoo_item">생년월일</label>
+                                    <div class="info_content birthday">
+                                        <input class="w80" type="text" name="birth_y">
+                                        <label for="birth_y">년</label>
+                                        <select id="birth_m" class="w80">
+                                            <option value="nochoice">선택</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                                        <label for="birth_m">월</label>
+                                        <select id="birth_d" class="w80">
+                                            <option value="nochoice">선택</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="10">13</option>
+                                            <option value="11">14</option>
+                                            <option value="12">15</option>
+                                            <option value="10">16</option>
+                                            <option value="11">17</option>
+                                            <option value="12">18</option>
+                                            <option value="10">19</option>
+                                            <option value="11">20</option>
+                                            <option value="12">21</option>
+                                            <option value="10">22</option>
+                                            <option value="11">23</option>
+                                            <option value="12">24</option>
+                                            <option value="10">25</option>
+                                            <option value="11">26</option>
+                                            <option value="12">27</option>
+                                            <option value="12">28</option>
+                                            <option value="10">29</option>
+                                            <option value="11">30</option>
+                                            <option value="12">31</option>
+                                        </select>
+                                        <label for="birth_d">일</label>
+                                    </div>
+                                </li>
+
+                                <li>
                                     <label for="telephone_lbl" class="tit_lbl pilsoo_item">연락처</label>
                                     <div class="info_content">
                                         <input class="w200" type="text" name="telephone_lbl" placeholder="숫자만 입력해주세요.">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="addr_lbl" class="tit_lbl">주소</label>
+                                    <div class="info_content">
+                                        <input class="w100" type="text" id="addr_lbl" placeholder="우편번호"> <button type="button" class="mb3">검색</button><br>
+                                        <input class="w370" type="text" id="addr1" placeholder="도로명주소"><br>
+                                        <input class="w370" type="text" id="addr2" placeholder="지번주소"><br>
+                                        <input class="w370" type="text" id="addr3" placeholder="나머지주소"><br>
                                     </div>
                                 </li>
                                 <li>
@@ -151,13 +228,12 @@
                                         <label for="no">수신안함</label>
                                     </div>
                                 </li>
-                                <li>
-                                    <label for="addr_lbl" class="tit_lbl">주소</label>
-                                </li>
                             </ul>
                         </div>
+                        <button type="submit" class="join_btn">가입완료</button>
                     </div>
                 </form>
+
             </div>
         </div> 
     </div>
