@@ -38,8 +38,7 @@
     color: #f00;  font-size: 13px; font-weight: bold; }
 
 .join_content .info_list { border-bottom: 2px solid #000; }
-.join_content .tit_lbl { display: inline-block;
-    background: #f4f4f4; 
+.join_content .tit_lbl { display: inline-block; 
     width: 20%; line-height: 40px; vertical-align: top;
     font-size: 13px; font-weight: bold; font-family: 'Roboto';
     letter-spacing: -2px; padding-left: 20px; }
