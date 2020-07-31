@@ -4,9 +4,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 #join_page { padding: 0px 0px 100px; text-align: center; }
-.login_h { background-image: url(../images/bg2.jpg); 
+.join_h { background-image: url(../images/bg2.jpg); 
     background-repeat: no-repeat; background-size: cover; 
     background-position: center;
-    padding: 120px 0; width: 100%; }
-.login_h h2 { font-size: 50px; line-height: 70px; font-family: 'Montserrat'; }
-.login_h p { font-size: 15px; line-height: 20px; font-family: 'Roboto'; }
+    padding: 120px 0; width: 100%; color: #fff; }
+.join_h h2 { font-size: 50px; line-height: 70px; font-family: 'Montserrat'; }
+.join_h p { font-size: 15px; line-height: 20px; font-family: 'Roboto'; }
+
+.join_box { padding-top: 40px; }
+.join_box legend { display: none; }
+.join_box .join_comment { text-align: left; padding-bottom: 100px; }
+.join_box .join_comment h3 { font-size: 20px; font-weight: 500;
+    line-height: 1.2; padding-bottom: 10px;
+    font-family: 'Montserrat'; }
+.join_box .join_comment p { font-size: 13px; font-weight: 400;
+    line-height: 1.2; color: #666; font-family: 'Roboto'; }
+.join_box .join_comment h3 > strong { font-weight: 700; }
+
+.join_box .join_content { border: 1px solid #ccc; 
+    border-top: 2px solid #000; }
+.join_box .join_content .content_h h3 { margin: 40px 0; 
+    font-size: 30px; font-family: 'Montserrat'; font-weight: 700; }
+.join_box .join_content .content_h p { font-size: 13px; line-height: 1.75;
+    font-family: 'Roboto'; }
+
+.join_box .join_content .content_box { margin: 50px 200px; text-align: left; }
+.join_box .join_content .info_pilsoo { width: 100%;
+    padding-left: 15px; padding-bottom: 10px; font-family: 'Roboto';
+    font-size: 13px; border-bottom: 2px solid #000; }
+.join_box .join_content .pilsoo_item { position: relative; }
+.join_box .join_content .pilsoo_item:before { content: '*';
+    position: absolute; left: 3px; top: 3px;
+    color: #f00;  font-size: 13px; font-weight: bold; }
+
+.join_content .info_list { padding-bottom: 20px; }
+.join_content .tit_lbl { display: inline-block;
+    background: #f4f4f4; 
+    width: 20%; line-height: 40px;
+    font-size: 13px; font-weight: bold;
+    letter-spacing: -2px; padding-left: 20px; }
+.join_content .info_content { display: inline-block;
+    width: 50%; vertical-align: middle; }
+.join_content .info_content input[type=text],
+.join_content .info_content input[type=password],
+.join_content .info_content select { height: 30px; 
+    border: 1px solid #ccc; 
+    padding: 0 1em; vertical-align: middle; }
+.join_content .info_content span { font-size: 13px; color: #999; }
+
+.join_content .w200 { width: 200px; }
+.join_content .w100 { width: 100px; }
+.join_content .w120 { width: 120px; }
+
+
+.join_content .info_content label { margin-right: 10px;
+    font-size: 13px; }
+
+
