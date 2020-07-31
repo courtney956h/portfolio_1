@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 
-/* 슬라이드 본문*/
+/* slide start*/
 .slideOuter { height: 1080px; overflow: hidden; }
 .slide { width: 1903px; height: 100%; position: relative; }
 .slide .slideInner { background-size: cover; 
@@ -24,7 +24,7 @@
 .slide .text p { font-size: 18px; font-family: 'Roboto';
     margin-bottom: 45px;  }
 
-/* 슬라이드 버튼 */
+/* slide button */
 .slide .bottom_btn { font-size: 11px; }
 .slide .bottom_btn a:nth-child(1){ padding: 10px 35px;
     color: #fff; font-weight: bold;
@@ -43,16 +43,19 @@
     background: #232323; border: 2px solid transparent;
     transition: all 1.5s; }
 
-/* 슬라이드 도트 */
+/* slide dotbox */
 .slideOuter .dotBox { position: absolute; bottom: 20px; width: 100%;
     text-align: center; }
 .slideOuter .dotBox a { display: inline-block;
     background: rgba(0,0,0,0.5); margin: 0 5px;
     height: 9px; width: 9px; border-radius: 50%; }
 .slideOuter .dotBox a:first-child { background: #000; }
+/* slide end */
 
 
-/* 본문 시작 */
+
+
+/* step1 start */
 .step1 { padding: 130px 0; overflow: hidden; }
 .step1 .container .n1 { width: 33%; padding: 0 15px; display: inline-block; }
 .step1 .container .n2 { width: 33%; padding: 0 15px; display: inline-block; }
@@ -65,9 +68,10 @@
     vertical-align: middle; font-family: 'Roboto'; }
 .step1 .container p { font-size: 14px; color: #6f6f6f;
     line-height: 24px; margin-right: 25px; font-family: 'Roboto'; }
+/* step1 end */
 
 
-
+/* step2 start */
 .step2 { background: #f7f7f7; }
 .container_fluid .sample_img { width: 50%; float: left; }
 .sample_img > img { width: 100%; height: 641px; }
@@ -90,9 +94,10 @@
 .sample_con .ex_text { padding-left: 75px; }
 .w50 { width: 48%; display: inline-block; vertical-align: top; }
 .prl15 { padding: 0 15px;}
+/* step2 end */
 
 
-
+/* step3 start */
 .step3 { padding: 130px 0; }
 .step3 ul li { width: 22%; margin: 0 15px;
     display: inline-block; height: 199px; 
@@ -110,10 +115,10 @@
     margin-bottom: 15px; line-height: 1.1; }
 .step3 ul li div  p { font-family: 'Roboto'; color: #6f6f6f;
     font-size: 14px; font-weight: 400; line-height: 24px; } 
+/* step3 end */
 
 
-
-/* step 4 시작 */
+/* step4 start*/
 .step4 { padding: 130px 0; font-family: 'Montserrat';
     background: #f7f7f7; text-align: center; }
 .step4_h { margin-bottom: 5%; padding: 0 15px; width: 27%; }
@@ -133,13 +138,16 @@
     background: #ff5519;
     opacity: 0; transition: all 0.5s; text-align: center; }
 .step4 ul li .g_img .over_icon { position: absolute;
-    top: 50%; right: 50%;  }
+    top: 40%; right: 33%; }
+.step4 ul li .g_img .over_icon i { margin-right: 10px; }
 .step4 ul li .g_img .overlay i { font-size: 20px; border-radius: 50%; 
     height: 46px; width: 46px; opacity: 1;
     border: 2px solid transparent; background: #fff;
     color: #232323; font-weight: 900;
     padding-top: 12px; }
-.step4 ul li .g_img .overlay a:hover i { transform: scale(1.2); transition: all 0.5s; }
+.step4 ul li .g_img .overlay a:hover i { background: transparent;
+    border: 2px solid #fff; color: #fff; 
+    transform: scale(1.1); transition: all 0.5s; }
 
 .step4 ul li .g_img img { width: 100%; height: auto; }
 .step4 ul li .g_content { padding: 25px 10px; }
@@ -148,10 +156,10 @@
     margin-bottom: 5px; }
 .step4 ul li p { color: #939393; line-height: 14px;
     font-family: 'Montserrat'; font-size: 11px; }
+/* step4 end */
 
 
-
-/* step 5 시작 */
+/* step5 start */
 .step5 { width: 100%; border-bottom: 1px solid #ededed; }
 .step5 li { width: 24.75%; display: inline-block;
     border-right: 1px solid #ededed; text-align: center;
@@ -166,10 +174,10 @@
 .step5 li p { font-size: 14px; color: #6f6f6f;
     font-family: 'Roboto'; font-weight: 400;
     line-height: 24px; }
+/* step5 end */
 
 
-
-/* step 6 시작 */
+/* step6 start */
 .step6 { padding: 130px 0; font-family: 'Montserrat'; 
     text-align: center; }
 .step6_h { margin-bottom: 5%; padding: 0 15px; width: 27%; }
@@ -182,10 +190,10 @@
 .step6 .theme_img { width: 50%; vertical-align: middle;
     display: inline-block; }
 .step6 .theme_img > img { width: 100%; }
+/* step6 end */
 
 
-
-/* step 7 시작 */
+/* step7 start */
 .step7 { background: #1c1c1c; padding: 130px 0; }
 .container_fluid .sample_vid { width: 50%; float: left; padding: 0 15px;
     position: relative; }
@@ -214,10 +222,10 @@
 .sample_h .bottom_btn a:hover { color: #232323;
     background: #fff; border: 2px solid transparent;
     transition: all 1.5s; }
-    
+/* step7 end */
 
 
-/* step 8 시작 */
+/* step8 start */
 .step8 { padding: 130px 0; font-family: 'Montserrat';
     background: #f7f7f7; }
 .step8 .container { padding: 0 15px; text-align: center; position: relative; }
@@ -248,18 +256,18 @@
     font-weight: 400; color: #939393; font-size: 11px;
     display: inline-block; font-family: 'Roboto'; }
 
-/*step8 도트 */
+/*step8 dotbox */
 .step8 .dotBox { position: absolute; bottom: -35px; width: 98%;
     text-align: center; }
 .step8 .dotBox a { display: inline-block;
     background: rgba(0,0,0,0.5); margin: 0 2px;
     height: 9px; width: 9px; border-radius: 50%; }
 .step8 .dotBox a:first-child { background: #000; }
+/* step8 end */
 
 
 
-
-/* step 9 시작 */
+/* step9 start */
 .step9 { padding: 130px 0; font-family: 'Montserrat'; }
 .step9 .container { padding: 0 15px; text-align: center; position: relative; }
 .step9_h { margin-bottom: 5%; padding: 0 15px; width: 27%; }
@@ -288,3 +296,4 @@
     text-align: left; }
 .step9 ul li .line { content: ''; width: 100%; height: 1px;
     background: #ededed; margin: 20px 0; }
+/* step9 end */
