@@ -4,6 +4,11 @@
 
 /* 헤더 부분 */
 #header { color: #000; }
+.topmenu { position: relative; height: 20px; }
+.topmenu .login { position:absolute; top:0; right:0; color:#000; }
+.topmenu .login a { padding-left:10px; font-size:11px; font-family: 'Montserrat';
+    font-weight: 500; }
+
 .h1NavWrap { font-family: 'Montserrat','나눔고딕'; }
 .h1Nav { height: 72px; position: relative; }
 .h1Nav h1 { font-weight: bold;
