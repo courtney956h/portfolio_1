@@ -5,7 +5,7 @@
 .login_h { background-image: url(../images/bg1.jpg); 
     background-repeat: no-repeat; background-size: cover; 
     background-position: center;
-    padding: 120px 0; width: 100%; }
+    padding: 250px 0 160px; width: 100%; }
 .login_h h2 { font-size: 50px; line-height: 70px; font-family: 'Montserrat'; }
 .login_h p { font-size: 15px; line-height: 20px; font-family: 'Roboto'; }
 
