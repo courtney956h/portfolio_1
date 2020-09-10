@@ -5,15 +5,14 @@
     $('.topmenu > a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
-        $('#NewContainer').remove()
-        $('#NewBox').load(url)
+        $('#newContainer').remove()
+        $('#newBox').load(url)
     })
 
 
-    $('.h1Nav > h1 > a').on('click', function(e){
-        e.preventDefault()
-        $('#NewContainer').remove()
-        $('#NewBox').load(url)
+    $('.h1Nav > h1 > a').on('click', function(){
+        $('#newContainer').remove()
+        $('#newBox').load('index.html')
     })
 
 })(jQuery)
