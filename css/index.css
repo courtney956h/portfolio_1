@@ -97,7 +97,7 @@
 
 /* step3 start */
 .step3 { padding: 130px 0; }
-.step3 ul li { width: 20%; margin: 0 15px;
+.step3 ul li { width: 22%; margin: 0 15px;
     display: inline-block; height: 199px; 
     position: relative; 
     border: 1px solid #ededed; }
@@ -159,7 +159,7 @@
 
 /* step5 start */
 .step5 { width: 100%; border-bottom: 1px solid #ededed; }
-.step5 li { width: 24.75%; display: inline-block;
+.step5 li { width: 24%; display: inline-block;
     border-right: 1px solid #ededed; text-align: center;
     padding: 0 15px; }
 .step5 li:last-child { border-right: none; }
