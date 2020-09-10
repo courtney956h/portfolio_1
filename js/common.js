@@ -1,6 +1,6 @@
 (function() {
 
-    $('#NewBox').load('main.html')
+    $('#newBox').load('main.html')
 
     $('.topmenu > a').on('click', function(e) {
         e.preventDefault()
