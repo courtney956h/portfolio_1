@@ -10,9 +10,9 @@
     })
 
 
-    $('.h1Nav > h1 > a').on('click', function(){
-        $('#newContainer').remove()
-        $('#newBox').load('index.html')
-    })
+    // $('.h1Nav > h1 > a').on('click', function(){
+    //     $('#newContainer').remove()
+    //     $('#newBox').load('index.html')
+    // })
 
 })(jQuery)
