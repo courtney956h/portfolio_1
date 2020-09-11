@@ -16,9 +16,10 @@
         }
     })
 
-    // #newBox에 각 html 삽입
+    // 메인 페이지 연결
     $('#newBox').load('main.html')
 
+    // 회원가입, 로그인 페이지 연결
     $('.topmenu a').on('click', function(e) {
         e.preventDefault()
         var url = $(this).attr('href')
@@ -26,6 +27,21 @@
         $('#newBox').load(url)
     })
 
+    // depth1 클릭시 서브페이지 연결
+    $('.depth1 > li > a').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#newContainer').remove()
+        $('#newBox').load(url)
+    })
+    
+    // depth2 클릭시 서브페이지 연결
+    $('.depth2 > li > a').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#newContainer').remove()
+        $('#newBox').load(url)
+    })
 
     // $('.h1Nav > h1 > a').on('click', function(){
     //     $('#newContainer').remove()
