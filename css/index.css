@@ -2,18 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 
-/* slide start*/
-.slideOuter { height: 1080px; overflow: hidden; }
-.slide { width: 100%; height: 100%; position: relative; }
-.slide .slideInner { background-size: cover; 
-    background-repeat: no-repeat; height: 1080px;
-    position: relative; background-position: center; }
-.slide .slideInner:nth-child(1) { background-image: url(../images/main1.jpg); }
-.slide .slideInner:nth-child(2) { background-image: url(../images/main2.jpg); }
-.slide .slideInner:nth-child(3) { background-image: url(../images/main3.jpg); }
+/* main_section start*/
 
+/* slide */
+.slideOuter { height: 750px; overflow: hidden; }
+.slideInner { height: 100%; }
+.slide { height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; }
+.slide1 {
+    background-image: url(../images/main1.jpg); }
+.slide2 {
+    background-image: url(../images/main2.jpg); }
+.slide3 {
+    background-image: url(../images/main3.jpg); }
+
+/* slide text */
 .slide .text { text-align: left; position: absolute;
-    top: 40%; left: 19%; color: #232323;
+    top: 30%; left: 19%; color: #232323;
     font-weight: 'Montserrat';
     padding: 0 15px; width: 1104px; height: auto; }
 .slide .text h2 { font-size: 70px;
@@ -41,14 +49,21 @@
     background: #232323; border: 2px solid transparent;
     transition: all 1.5s; }
 
-/* slide dotbox */
-.slideOuter .dotBox { position: absolute; bottom: 20px; width: 100%;
+/* slide dots */
+.slideOuter .slick-dots { position: absolute; 
+    bottom: 20px; width: 100%;
     text-align: center; }
-.slideOuter .dotBox a { display: inline-block;
-    background: rgba(0,0,0,0.5); margin: 0 5px;
-    height: 9px; width: 9px; border-radius: 50%; }
-.slideOuter .dotBox a:first-child { background: #000; }
-/* slide end */
+.slideOuter .slick-dots li { display: inline-block; }
+.slideOuter .slick-dots li button {
+    background: rgba(0,0,0,0.5);
+    height: 9px; width: 9px;
+    border-radius: 50%; 
+    text-indent: -99999px; 
+    overflow: hidden; 
+    margin: 0 5px;}
+.slideOuter .slick-dots li.slick-acitve button { background: #000; }
+
+/* main_section end */
 
 
 
