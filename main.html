@@ -1,8 +1,8 @@
-<div id="newContainer">
-    <div id="section">
+<div id="main_section">
+    <div id="main_section">
         <div class="slideOuter">
-            <div class="slide row">
-                <div class="slideInner">
+            <div class="slideInner">
+                <div class="slide slide1">
                     <div class="text">
                         <h2>Creative web design, Creative WEB:D</h2>
                         <p>We work hard, we play hard</p>
@@ -12,7 +12,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slideInner">
+                <div class="slide slide2">
                     <div class="text">
                         <h2>Awesome design agency</h2>
                         <p>We work hard, we play hard</p>
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="slideInner">
+                <div class="slide slide3">
                     <div class="text">
                         <h2>Interactive design project</h2>
                         <p>We work hard, we play hard</p>
@@ -31,17 +31,6 @@
                             <a href="#">DOWNLOAD NOW</a>
                         </div>
                     </div>
-                </div>
-                <div class="dotBox">
-                    <a href="#" class="active">
-                        <span class="blind">1</span>
-                    </a>
-                    <a href="#" class="active">
-                        <span class="blind">2</span>
-                    </a>
-                    <a href="#" class="active">
-                        <span class="blind">3</span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -398,3 +387,25 @@
         </div>
     </div>
 </div>
+
+
+<script>
+
+    (function($) {
+
+        $('.slideInner').slick({
+        autoplay:true,
+        dots:true,
+        autoplaySpeed:3000,
+        slidesToShow:1,
+        slidesToScroll:1,
+        pauseOnHover:true,
+        pauseOnDotsHover:true,
+        pauseOnFocus:true,
+        draggable:true,
+        fade:false,
+        arrows:false,
+        })
+
+    })(jQuery)
+</script>
