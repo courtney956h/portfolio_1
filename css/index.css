@@ -6,8 +6,8 @@
 
 /* slide */
 .slideOuter { height: 750px; overflow: hidden; }
-.slideInner { height: 100%; }
-.slide { height: 100%;
+/*slideInner { height:100% } 넣으면 안됨 */
+.slide { height: 750px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +61,7 @@
     text-indent: -99999px; 
     overflow: hidden; 
     margin: 0 5px;}
-.slideOuter .slick-dots li.slick-acitve button { background: #000; }
+.slideOuter .slick-dots li.slick-active button { background: #000; }
 
 /* main_section end */
 
