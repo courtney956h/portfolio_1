@@ -16,7 +16,8 @@
 .com_h { background-image: url(../images/company1.jpg); }
 
 .com_h_txt { color: #fff; text-align: center; 
-    padding: 250px 0 160px; }
+    position: absolute; 
+    top: 50%; left:50%; transform: translate(-50%, -50%); }
 .com_h_txt span { font-size: 13px; 
     line-height: 20px; font-family: '나눔 고딕'; }
 .com_h_txt h2 { font-size: 50px; 
