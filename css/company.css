@@ -33,6 +33,20 @@
     line-height: 70px; 
     font-family: '나눔 고딕'; }
 
+/* down_btn */  
+.down_btn { 
+    color: #fff;
+    background: #ff5519; 
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 15px;
+    position: absolute;
+    top: 87%;
+    left: 48.5%;
+}
+.down_btn i { padding: 18px; }
+
 /* step1_content */
 .com_step1 { padding-top: 130px; }
 .com_step1 li { 
