@@ -399,7 +399,7 @@
 .container_fluid .sample_vid { width: 50%; 
     float: left; padding: 0 15px;
     position: relative; }
-.sample_vid i { color: #fff; 
+/* .sample_vid i { color: #fff; 
     font-size: 60px; 
     width: 55%; 
     display: block; }
@@ -409,7 +409,7 @@
 .sample_vid a:hover i { transform: scale(1.5); 
     transition: all 0.5s; }
 .sample_vid > img { width: 100%; 
-    height: 401px; }
+    height: 401px; } */
 
 .step7 .sample_h { height: 401px; 
     width: 50%; 
