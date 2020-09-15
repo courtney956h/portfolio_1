@@ -36,15 +36,15 @@
         </section>
         <section class="step1">
             <div class="container row">
-                <div class="n1">
+                <div class="n_txt">
                     <h3>01.<span>당신이 원하는 웹사이트!</span></h3>
                     <p>사이트는 제작을 더불어 관리가 쉬워야합니다. 필요한 내용을 그때그때 수정가능합니다. 직접 만나보세요.</p>
                 </div>
-                <div class="n2">
+                <div class="n_txt">
                     <h3>02.<span>간결하고 예쁜 디자인</span></h3>
                     <p>원하시는 디자인이나 기능이 있으면 미리 문의주세요. 빠르게 검토하여 친절하게 피드백 드리겠습니다.</p>
                 </div>
-                <div class="n3">
+                <div class="n_txt">
                     <h3>03.<span>시간낭비 없는 빠른 셋팅 시간</span></h3>
                     <p>빠른 셋팅과 빠른 작업, 정확한 작업으로 보답하겠습니다.</p>
                 </div>
@@ -52,10 +52,10 @@
         </section>
         <section class="step2">
             <div class="container_fluid cf">
-                <div class="sample_img">
+                <div class="sample_img column">
                     <img src="images/sample.jpg" alt="">
                 </div>
-                <div class="sample_text">
+                <div class="sample_text column">
                     <h4>빠르고 간편한 디자인,<br>
                         간결하고 쉬운 수정</h4>
                     <div class="sample_con cf">
@@ -92,32 +92,32 @@
             </div>
         </section>
         <section class="step3">
-            <ul class="row cf">
-                <li>
+            <div class="countul row cf">
+                <div class="countli">
                     <div>
                         <i class="far fa-heart"></i><br>280
                         <p>Our Clients</p>
                     </div>
-                </li>
-                <li>
+                </div>
+                <div class="countli">
                     <div>
                         <i class="fas fa-laptop"></i><br>540
                         <p>Project Completed</p>
                     </div>
-                </li>
-                <li>
+                </div>
+                <div class="countli">
                     <div>
                         <i class="fas fa-camera"></i><br>300
                         <p>Custom Design</p>
                     </div>
-                </li>
-                <li>
+                </div>
+                <div class="countli">
                     <div>
                         <i class="far fa-comments"></i><br>8580
                         <p>Technical Project</p>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
         <section class="step4">
             <div class="step4_h row">
@@ -389,22 +389,45 @@
 
 
 <script>
+    $(window).scroll(function(){
+        var sct = $(this).scrollTop()
+        var s1Near = $('.step1').offset().top - $(this).height()/2
+        if ( sct >= s1Near) {
+            $('.step1').addClass('on')
+        } else {
+            $('.step1').removeClass('on')
+        }
 
-    (function($) {
+        var s2Near = $('.step2').offset().top - $(this).height()/2
+        if ( sct >= s2Near) {
+            $('.container_fluid').addClass('on')
+        } else {
+            $('.container_fluid').removeClass('on')
+        }
+    
+        var s3Near = $('.step3').offset().top - $(this).height()/2
+        if ( sct>=s3Near ) {
+            $('.step3').addClass('on')
+        } else {
+            $('.step3').removeClass('on')
+        }
+    
+    })
 
-        $('.slideInner').slick({
-        autoplay:true,
-        dots:true,
-        autoplaySpeed:3000,
-        slidesToShow:1,
-        slidesToScroll:1,
-        pauseOnHover:true,
-        pauseOnDotsHover:true,
-        pauseOnFocus:true,
-        draggable:true,
-        fade:false,
-        arrows:false,
-        })
 
-    })(jQuery)
+
+    $('.slideInner').slick({
+    autoplay:true,
+    dots:true,
+    autoplaySpeed:3000,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:true,
+    pauseOnDotsHover:true,
+    pauseOnFocus:true,
+    draggable:true,
+    fade:false,
+    arrows:false,
+    })
+    
 </script>
