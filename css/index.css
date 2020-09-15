@@ -182,7 +182,7 @@
 .step3 .countul .countli { width: 22%; 
     margin: 0 15px;
     display: inline-block; 
-    eight: 199px; 
+    height: 199px; 
     position: relative; 
     border: 1px solid #ededed; }
 .step3 .countul .countli:hover { border: 6px solid #ff5519;
