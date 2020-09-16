@@ -625,28 +625,3 @@
 
 
 
-/* loading 화면 */
-.introAni { position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 9999999999; }
-.introAni > div {
-    position: absolute;
-    top: 50%; width: 100%;
-    transform: translateY(-50%);
-    text-align: center; }
-.introAni .loading_dot {
-    display: inline-block;
-    border-radius: 50%;
-    height: 12px; width: 12px;
-    background: #fff; 
-    margin: 0 5px; }
-.introAni .loading_dot:nth-child(1) {
-    animation: bounce 2s both 0s 2;
-}
-.introAni .loading_dot:nth-child(2) {
-    animation: bounce 2.5s both 0.5s 2; 
-}
-.introAni .loading_dot:nth-child(3) {
-    animation: bounce 3s both 1s 2;
-}
