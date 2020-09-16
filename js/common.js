@@ -15,9 +15,9 @@
     });
 
 
-    $(window).scroll(function(){
-        var scd = $(this).scrollDown()
-    })
+    // $(window).scroll(function(){
+    //     var scd = $(this).scrollDown()
+    // })
 
     // mousewheel 이벤트 연결
     $("section").on("mousewheel", function (e, wh) {
