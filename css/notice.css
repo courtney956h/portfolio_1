@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* notice header */
+.notice_info {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px; 
+    position: relative; }
+.notice_info:before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: rgba(0,0,0,0.4); }
+.notice_h {
+    background-image: url(../images/notice.jpg);
+}
+
+.notice_h_txt {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%); }
+.notice_h_txt h2 { 
+    font-size: 50px; 
+    line-height: 70px; 
+    font-family: '나눔 고딕'; }
+.notice_h_txt span {
+    font-size: 13px; 
+    line-height: 20px; 
+    font-family: 'Montserrat'; }
+
+
+/* notice content */
+.noticePage { margin: 130px 0;}
+.noticeTable col:nth-child(1) { width: 8% }
+.noticeTable col:nth-child(2) { width: auto; }
+.noticeTable col:nth-child(3) { width: 13% }
+.noticeTable col:nth-child(4) { width: 13% }
+.noticeTable table { border: none; 
+    font-size: 14px; }
+.noticeTable th,
+.noticeTable td {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px; }
+
+.noticeTable tbody td { color: #6f6f6f;}
+.noticeTable tbody td:nth-child(2) { font-family: 'Roboto'; 
+    color: #555; }
+.noticeTable tbody td:nth-child(1),
+.noticeTable tbody td:nth-child(3),
+.noticeTable tbody td:nth-child(4) {
+    text-align: center; }
+
+.noticeTable th { background: #f9f9f9; 
+    text-align: center; 
+    border-top: 2px solid #666; }
+.noticeTable tbody tr:hover td:nth-child(2) {
+    color: rgba(9, 170, 122, 0.849); }
+
+
+/* 게시판 페이지 번호 */
+.noticePage .numlist { text-align: center; 
+    font-size: 16px;
+    margin: 40px 0; }
+.noticePage .numlist a { display: inline-block; 
+    padding: 8px 15px; 
+    color: #666;
+    border: 1px solid #e8e8e8;
+    transition: all 0.5s; }
+.noticePage .numlist a:nth-child(2):hover { border: 1px solid #999;
+    background: rgba(0,0,0,0.1); }
+.noticePage .numlist a.on { color: #fff;
+    background: #666;}
+
+/* 게시판 서치박스 */
+.sbox { text-align: left; }
+.sbox select { height: 35px;
+    font-size: 14px;
+    line-height: 38px;
+    margin-right: 5px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0; 
+    color: #666;
+    cursor: pointer;
+    vertical-align: middle;  }
+.sbox input[type=text] { height: 35px; 
+    width: 200px;
+    font-size: 14px;
+    margin-right: 5px;
+    text-indent: 1em;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    color: #666; 
+    vertical-align: middle; }
+.sbox input[type=submit] { height: 35px;
+    font-size: 14px;
+    padding: 0 20px;
+    border-radius: 2px;
+    line-height: 31px;
+    color: #666;
+    background: #fff;
+    border: 2px solid #d8d8d8; 
+    vertical-align: middle;
+    transition: all 0.5s; }
+.sbox input[type=submit]:hover {
+    background: rgba(0,0,0,0.1); }

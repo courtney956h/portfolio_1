@@ -46,11 +46,22 @@ address, em { font-style:normal }
 strong, th { font-weight:normal }
 
 /*박스안에 넘치는 글자를 말줄임표로 줄일때*/
-.ellipsis {
+/* .ellipsis {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+} */
+td { white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+/* 캡션 안보이게 처리 */
+caption { display: none; }
+
+/* 테이블 스타일 */
+table { width: 100%; 
+    table-layout: fixed; 
+    border-collapse: collapse;} 
 
 /* 본문바로가기 스타일 */
 .skip a { display:block;
