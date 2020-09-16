@@ -1,17 +1,23 @@
 (function($) {
 
     // loading 화면
-    var minCnt = setInterval(minusCount, 1000)
-    var k = 5;
-    function minusCount() {
-        k--;
-        if (k===0) {
-            clearInterval(minCnt)
-            $('.introAni').fadeOut(500)
-            return false
-        }
-    }
+    $(".introAni").addClass("on");
+    var timer = setInterval(function () {
+        $(".introAni").toggleClass("on");
+    }, 1480);
+    
+    $(window).load(function () {
+        $(".introAni")
+        .delay(4500)
+        .fadeOut(300, function () {
+            clearInterval(timer);
+        });
+    });
 
+
+    $(window).scroll(function(){
+        var scd = $(this).scrollDown()
+    })
 
     // mousewheel 이벤트 연결
     $("section").on("mousewheel", function (e, wh) {
