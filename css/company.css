@@ -392,8 +392,9 @@
     line-height: 14px; }
     
 /* step7 overlay */
-.s7_clients .s7_cp { position: relative; }
-.s7_clients .s7_cp .s7_overlay { overflow: hidden;
+.s7_clients .s7_cp { position: relative; 
+    overflow: hidden; }
+.s7_clients .s7_cp .s7_overlay { 
     background: rgba(0,0,0,0.5);
     position: absolute; 
     top: 0; bottom: 0; right: 0; left: 0;
@@ -409,7 +410,7 @@
     padding: 12%;
     position: absolute;
     top: 55%; }
-    
+
 .s7_border { 
     border-bottom: 1px solid #ff5519;
     width: 80%; 
