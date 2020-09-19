@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+.sitemapBox .site_h { padding: 200px 0 100px; 
+    text-align: center; }
+.sitemapBox h2 { 
+    font-size: 50px;
+    line-height: 70px;
+    font-family: '나눔 고딕'; }
+.sitemapBox span { 
+    font-size: 13px;
+    line-height: 20px; 
+    font-family: 'Montserrat'; }
+
+
+.site_content { height: 800px; 
+    padding: 30px 15px; 
+    border-top: 2px solid #000; }
+.sitemapBox .siteTit {
+    float: left;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #ff5519; }
+
+.sitemapBox .siteList {
+    float: left;
+    width: calc(100% - 200px); }
+.sitemapBox .depth1 { transition: all 1s; }
+.sitemapBox .depth1 > li { 
+    float: left;
+    width: 25%;
+    height: 120px;
+    font-size: 15px;
+    color: #6f6f6f;
+    line-height: 20px;
+    font-weight: 500; }
+.sitemapBox .depth1 > li:hover {
+    color: #000;
+    font-weight: 600;}
+    
