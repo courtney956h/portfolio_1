@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* his_info */
+.his_info { 
+    background-size: cover; 
+    background-position: center;
+    height: 600px; 
+    position: relative; }
+
+.his_info:before { 
+    content: '';
+    background: rgba(0,0,0, 0.2);
+    position: absolute; 
+    top: 0; bottom: 0; right: 0; left: 0; }
+
+.his_h { background-image: url(../images/history.jpg); }
+
+.his_h_txt { 
+    color: #fff; 
+    text-align: center; 
+    position: absolute; 
+    top: 50%; left:50%; 
+    transform: translate(-50%, -50%); }
+.his_h_txt span { 
+    font-size: 13px; 
+    line-height: 20px; 
+    font-family: 'Montserrat'; }
+.his_h_txt h2 { 
+    font-size: 50px; 
+    line-height: 70px; 
+    font-family: '나눔 고딕'; }
+
+/* down_btn */  
+.down_btn { 
+    color: #fff;
+    background: #ff5519; 
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 15px;
+    position: absolute;
+    top: 87%;
+    left: 48.5%;
+}
+.down_btn i { padding: 18px; }
+
+
+/* his_step1 */
+.his_step1 { padding: 130px 0; 
+    font-family: 'Montserrat'; 
+    text-align: center; }
+.his_s1_h { margin-bottom: 5%; 
+    padding: 0 15px;
+    width: 60%; }
+.his_s1_h p:first-child { margin-bottom: 10px; 
+    font-family: 'Montserrat';
+    font-size: 12px; 
+    line-height: 20px; 
+    font-weight: 500; 
+    color: #ff5519; }
+.his_s1_h h2 { margin-bottom: 25px; 
+    font-size: 32px; 
+    line-height: 40px; font-weight: 600; 
+    color: #232323; }
+.his_s1_h p:last-child { font-size: 14px; 
+    line-height: 24px; 
+    font-weight: 400; 
+    color: #6f6f6f; }
+.his_step1 .his_s1_img { 
+    vertical-align: middle;
+    display: inline-block; }
+.his_step1 .his_s1_img > img { width: 100%; }
+
+
+
+/* his_step2 */
+.his_step2 { position: relative; }
+.his_step2 .his_s2_cover:before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background: rgba(0,0,0,0.3); }
+.his_step2 .his_s2_img {
+    background-image: url(../images/main_bg.png);
+    height: 730px; width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; }
+
+.his_s2_position { padding: 130px 0; 
+    position: relative; }
+.his_s2_container { position: absolute; 
+    top: 50%; }
+.p_list { background: #fff; 
+    padding: 50px; 
+    margin: 0 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    text-align: center; 
+    width: 32%; 
+    display: inline-block; }
+
+.p_list img { border-radius: 50%;
+    height: 180px; width: 180px; 
+    margin-bottom: 40px;}
+.p_list .p_txt p:first-child { font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat'; 
+    color: #939393; }
+.p_list .p_txt span { margin-bottom: 20px; 
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px; 
+    color: #232323; 
+    display: block; }
+.p_list .p_txt p:last-child { font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #6f6f6f;
+    line-height: 24px; }
+
+
+/* his_step3 */
+.his_step3 { padding: 130px 0; 
+    font-family: 'Montserrat'; 
+    text-align: center; }
+.his_s3_h { margin-bottom: 10%; 
+    padding: 0 15px;
+    width: 60%; }
+.his_s3_h p { margin-bottom: 10px; 
+    font-family: 'Montserrat';
+    font-size: 12px; 
+    line-height: 20px; 
+    font-weight: 500; 
+    color: #ff5519; }
+.his_s3_h h2 { margin-bottom: 25px; 
+    font-size: 32px; 
+    line-height: 40px; 
+    font-weight: 600; 
+    color: #232323; }
+
+.his_s3_list ul li { display: inline-block;
+    width: 33%; }
+.his_s3_list ul li > i { color: #6f6f6f; 
+    font-size: 35px; 
+    float: left; }
+.his_s3_list .his_s3_txt { text-align: left;
+    padding-left: 75px; 
+    width: 95%;
+    margin-bottom: 50px; }
+.his_s3_list .his_s3_txt span { margin-bottom: 10px; 
+    font-weight: 600;
+    color: #232323;
+    font-family: 'Montserrat';
+    display: block; }
+.his_s3_list .his_s3_txt p { font-size: 14px;
+    font-weight: 400;
+    color: #6f6f6f;
+    line-height: 24px;
+    font-family: Roboto; }
