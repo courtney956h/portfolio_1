@@ -13,14 +13,37 @@
             clearInterval(timer);
         });
     });
+    
+    //scroll 부분
+    var scrollSize = $(document).height() - $(window).height();
+    var flag=true;
+    $(window).on('scroll', function() {
+        var sct = $(this).scrollTop();
+        if ( sct >= 92 && flag ) {
+            $('#header').css({
+                backgroundColor: '#000',
+                color: '#fff',
+                opacity: '0'
+            }).stop().animate({
+                height: '92px',
+                opacity: '1'
+            }, 500)
+            flag=false;
+        } else if ( sct===0 && !flag ) {
+            $('#header').css({
+                backgroundColor: 'transparent',
+                color: '#000',
+                opacity: '0'
+            }).stop().animate({
+                height: '92px',
+                opacity: '1'
+            })
+        }
+    })
 
-
-    // $(window).scroll(function(){
-    //     var scd = $(this).scrollDown()
-    // })
 
     // mousewheel 이벤트 연결
-    $("section").on("mousewheel", function (e, wh) {
+    $(".section").on("mousewheel", function (e, wh) {
         var index = $(this).index()
         // 마우스 휠 올릴때
         if ( wh > 0 ) {
