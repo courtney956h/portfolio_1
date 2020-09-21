@@ -163,3 +163,53 @@
 
 
 /* his_step4 */
+
+
+/* his_step5 */
+.his_step5 { padding: 130px 0; 
+    font-family: 'Montserrat'; 
+    text-align: center; }
+.his_s5_h { margin-bottom: 5%; 
+    padding: 0 15px;
+    width: 60%; }
+.his_s5_h p:first-child { margin-bottom: 10px; 
+    font-family: 'Montserrat';
+    font-size: 12px; 
+    line-height: 20px; 
+    font-weight: 500; 
+    color: #ff5519; }
+.his_s5_h h2 { margin-bottom: 25px; 
+    font-size: 32px; 
+    line-height: 40px; font-weight: 600; 
+    color: #232323; }
+
+.his_s5_list > div { padding: 0 15px;
+    width: 30%; display: inline-block; }    
+.his_s5_list .his_s5_g { 
+    position: relative; 
+    overflow: hidden; }
+.his_s5_g img { width: 100%; }
+
+
+.his_s5_g:hover .his_s5_overlay {
+    animation: fadeInUp 0.5s both; }
+.his_s5_overlay { background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    opacity: 0; 
+    padding: 20px 15px;
+    transition: all 0.5s; }
+.his_s5_overlay span { color: #fff;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    line-height: 23px;
+    font-weight: 500;
+    margin-bottom: 15px; 
+    display: block; 
+    text-align: center; }
+.his_s5_overlay p { color: #b7b7b7; 
+    font-size: 14px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    text-align: center; 
+    padding: 0 15px; }
