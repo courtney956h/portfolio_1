@@ -14,11 +14,11 @@
 
         <div class="com_step1 row">
             <div class="step1_content">
-                <ul>
-                    <li>
+                <div class="com_step1_ul">
+                    <div class="com_step1_li">
                         <img src="images/com_step1.jpg" alt="">
-                    </li>
-                    <li>
+                    </div>
+                    <div class="com_step1_li">
                         <span>REALLY GOOD AT WEB DESIGNING</span>
                         <h2>우리는 여러 사이트를 구축한 경험이 있습니다. 그래서 사이트 수정이 얼마나 번거로운지 불편한지도 알고있습니다.</h2>
                         <p>우리는 여러 사이트를 구축한 경험이 있습니다. 그래서 사이트 수정이 얼마나 번거로운지 불편한지도 알고있습니다. 사이트는 제작을 더불어 관리가 쉬워야합니다. 필요한 내용을 그때그때 수정가능합니다. 직접만나보세요.</p>
@@ -28,59 +28,59 @@
                                 OUR SERVICES
                             </a>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
             <div class="border"></div>
             <div class="step1_list">
-                <ul>
-                    <li>
+                <div class="step1_list_ul">
+                    <div class="step1_list_li">
                         <i class="fas fa-desktop"></i>
                         <div class="list_txt">
                             <span>CREATIVE DESIGN</span>
                             <p>익숙한 디자인, 익숙한 환경보다는 새롭고 신선한 디자인 제작을 목표로 하고있습니다.</p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="step1_list_li">
                         <i class="fas fa-book-open"></i>
                         <div class="list_txt">
                             <span>EASY CODE</span>
                             <p>쉽고 깔끔한 소스정리로 텍스트 변경만 하시면 편하게 수정 적용이 가능합니다.</p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="step1_list_li">
                         <i class="fas fa-gifts"></i>
                         <div class="list_txt">
                             <span>DESIGN CUSTOMIZE</span>
                             <p>직접 수정이 어려우시면 커스터마이징 의뢰를 진행 할 수 있습니다.</p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="com_step2">
             <div class="step2_content row">
-                <ul>
-                    <li>
+                <div class="step2_c_ul">
+                    <div class="step2_c_li">
                         <h3>01.</h3>
                         <span>Creativity.<br>Creative design.</span>
                         <p>기본 레이아웃과 추가 디자인 & 개발 등이 가능합니다. 자세한 사항이나 궁금한 사항은 sample@sample.com으로 문의하세요.</p>
                         <div class="step2_line"></div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="step2_c_li">
                         <h3>02.</h3>
                         <span>Technology.<br>Responsive web.</span>
                         <p>기기의 화면크기를 인식하고 컨텐츠를 화면에 자동으로 리사이징 되는 방식으로 다양한 스크린 사이즈에 맞게 최적의 해상도로 맞추어 주는 사이트입니다.</p>
                         <div class="step2_line"></div>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="step2_c_li">
                         <h3>03.</h3>
                         <span>Discover.<br>Application.</span>
                         <p>해당 웹사이트는 다양한 분야에서 많은 분들이 편하게 수정하여 이용하고 계십니다. 이미지와 텍스트등을 변경하여도 색다른 느낌이 연출됩니다.</p>
                         <div class="step2_line"></div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -91,8 +91,8 @@
                     함께 구축할 수 있도록 도와드리겠습니다.</h2>
             </div>
             <div class="step3_img">
-                <img src="images/com_step3_1.jpg" alt="">
-                <img src="images/com_step3_2.jpg" alt="">
+                <img class="column" src="images/com_step3_1.jpg" alt="">
+                <img class="column" src="images/com_step3_2.jpg" alt="">
             </div>
             <div class="step3_content">
                 <div class="step3_c1">
@@ -169,7 +169,7 @@
 
         <div class="com_step6">
             <div class="s6_container cf row">
-                <div class="s6_h">
+                <div class="s6_h column">
                     <h4>쉽게 수정가능한 테마</h4>
                     <div class="s6_list">
                         <p><i class="fas fa-check"></i>익숙한 디자인보다는 새롭고 신선한 디자인 제작을 목표로 하고있습니다.</p>
@@ -185,7 +185,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="sample_vid">
+                <div class="sample_vid column">
                     <iframe width="600" height="380" src="https://youtube.com/embed/jgh8owCuX78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -281,7 +281,50 @@
 </div>
 
 <script>
+    $(window).scroll(function() {
+        var sct = $(this).scrollTop()
 
+        // com_step1 animation
+        var cs1Near = $('.com_step1').offset().top - $(this).height()/2
+        if ( sct >= cs1Near ) {
+            $('.com_step1').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step1').removeClass('on')
+        }
+
+        var sc2Near = $('.com_step2').offset().top - $(this).height()/2
+        if ( sct >= sc2Near ) {
+            $('.com_step2').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step2').removeClass('on')
+        }
+
+        var sc3Near = $('.com_step3').offset().top - $(this).height()/2
+        if ( sct >= sc3Near ) {
+            $('.com_step3').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step3').removeClass('on')
+        }
+
+        var sc6Near = $('.com_step6').offset().top - $(this).height()/2
+        if ( sct >= sc6Near ) {
+            $('.com_step6').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step6').removeClass('on')
+        }
+
+        var sc7Near = $('.com_step7').offset().top - $(this).height()/2
+        if ( sct >= sc7Near ) {
+            $('.com_step7').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step7').removeClass('on')
+        }
+    })
+
+
+
+
+// slick 부분
 $('.logo_visual').slick({
     autoplay:true,
     dots:false,
