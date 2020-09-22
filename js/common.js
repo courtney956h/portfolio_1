@@ -42,6 +42,26 @@
         }
 
 
+        // gotop 버튼 생성
+        if ( sct >= 100 ) {
+            $('.gotop').addClass('on').stop().animate({
+                opacity:'1'
+            }, 500)
+        } else {
+            $('.gotop').removeClass('on').stop().animate({
+                opacity:'0'
+            }, 500)
+        }
+
+        // gotop 버튼 클릭시 up
+        $('.gotop').on('click', function() {
+            $('html, body').stop().animate({
+                scrollTop:'0'
+            }, 800, 'linear')
+        })
+
+
+
         // company.html 스크롤 이벤트 발생하는 함수 호출
         // 스크롤 이벤트가 발생하면 html에서 #company_section을 찾아서 
         // 해당 구역이 존재하면 함수를 호출해서 애니메이션 수행
