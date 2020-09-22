@@ -339,7 +339,8 @@
     line-height: 24px; }
 
 .s8_email_box { margin: 40px; 
-    width: 100%; }
+    width: 100%;
+    position: relative; }
 .s8_email_box input[type=text] {
     float: left;
     display: block;
@@ -349,7 +350,7 @@
     font-size: 14px;
     line-height: 24px;
     height: 62px;
-    width: 90%; }
+    width: 80%; }
 .s8_email_box button { 
     display: inline-block;
     cursor: pointer; 
@@ -357,10 +358,11 @@
     padding: 15px 20px;
     height: 62px;
     vertical-align: top;
-    margin: -21px;
     background: #fff;
     border-radius: 0 4px 4px 0;
-    border-color: #222; }
+    border-color: #222;
+    position: relative;
+    bottom: 0; right: 5%; }
 .s8_email_box button i { color: #ff5519; 
     font-size: 20px; }
 
