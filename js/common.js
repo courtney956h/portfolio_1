@@ -15,10 +15,11 @@
     });
     
     // scroll 부분
-    var scrollSize = $(document).height() - $(window).height();
+    // var scrollSize = $(document).height() - $(window).height();
     var flag=true;
+    var sct;
     $(window).on('scroll', function() {
-        var sct = $(this).scrollTop();
+        sct = $(this).scrollTop();
         if ( sct >= 92 && flag ) {
             $('#header').css({
                 backgroundColor: '#000',
