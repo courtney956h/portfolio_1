@@ -192,13 +192,23 @@
 
 
 .his_s5_g:hover .his_s5_overlay {
-    animation: fadeInUp 0.5s both; }
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
 .his_s5_overlay { background: rgba(0,0,0,0.8);
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0; 
-    opacity: 0; 
+    opacity: 1;
+    -webkit-transform: translate3d(0, 85%, 0);
+    transform: translate3d(0, 85%, 0);
     padding: 20px 15px;
     transition: all 0.5s; }
+
+.his_s5_g:hover .his_s5_overlay span { 
+    position: absolute;
+    top: 40%; left: 22%; }
+
 .his_s5_overlay span { color: #fff;
     font-size: 16px;
     font-family: 'Montserrat';
@@ -212,4 +222,152 @@
     font-weight: 400; 
     line-height: 24px; 
     text-align: center; 
-    padding: 0 15px; }
+    padding: 0 20px; 
+    position: absolute;
+    top: 50%; left: 0; }
+
+
+
+/* his_step6*/
+.his_step6 { background: #1c1c1c; 
+    padding: 130px 0; }
+
+.his_s6_li { display: inline-block;
+    width: 24%; 
+    padding: 0 40px;
+    text-align: center; 
+    border-right: 1px solid #363636; }
+.his_s6_li h3 { color: #ff5519; 
+    font-size: 48px; 
+    line-height: 54px; 
+    font-family: 'Montserrat';
+    font-weight: 300; 
+    letter-spacing: -2px; 
+    margin-bottom: 10px; }
+.his_s6_li p:nth-of-type(1) {
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #6f6f6f; }
+.his_s6_li span { 
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Montserrat';
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block; }
+.his_s6_li p:nth-of-type(2) {
+    font-size: 14px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Roboto'; }
+
+
+
+
+/* his_step7 */
+.his_step7 { padding: 130px 0; 
+    text-align: center; }
+.his_step7 .his_s7_img {
+    vertical-align: middle;
+    display: inline-block; }
+.his_step7 .his_s7_img > img { width: 100%; }
+
+/* his_step7 content */
+.his_s7_content { margin-top: 1%; }
+.his_s7_content .column { 
+    display: inline-block; 
+    width: 33%;
+    vertical-align: top; 
+    text-align: left; }
+
+.his_s7_c1 h2 { 
+    display: inline-block; 
+    width: 90%;
+    color: #232323; 
+    font-size: 32px;
+    line-height: 40px; 
+    font-weight: 600; 
+    font-family: 'Montserrat'; 
+    padding-right: 15px; }
+.his_s7_c2, .his_s7_c3 { padding: 0 15px; }
+.his_s7_c2 h2, .his_s7_c3 h2 {
+    float: left;
+    padding: 0 15px;
+    color: #d6d5d5;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 60px;
+    font-family: 'Montserrat';
+    letter-spacing: -3px;
+    margin-bottom: 25px; }
+.his_s7_txt { float: left;
+    padding: 0 15px;
+    width: 70%; }
+.his_s7_c2 span, .his_s7_c3 span { 
+    font-weight: 600;
+    color: #232323;
+    font-family:  'Montserrat';
+    font-size: 14px; }
+.his_s7_c2 p, .his_s7_c3 p { 
+    margin: 5px 0 25px; 
+    font-weight: 400;
+    line-height: 24px;
+    color: #6f6f6f;
+    font-family: 'Roboto';
+    font-size: 14px; }
+
+
+/* his_step8 */
+.his_step8 { background: #f7f7f7;
+    padding: 130px 0; 
+    text-align: center; }
+.his_s8_container { width: 60%; }
+.his_step8 h2 { font-size: 40px; 
+    font-weight: 600; 
+    font-family: 'Montserrat'; 
+    color: #232323; 
+    line-height: 46px; 
+    margin-bottom: 25px; }
+.his_step8 p { margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 400; 
+    color: #6f6f6f; 
+    line-height: 24px; }
+
+.s8_email_box { margin: 40px; 
+    width: 100%; }
+.s8_email_box input[type=text] {
+    float: left;
+    display: block;
+    border-radius: 4px 0 0 4px;
+    border-color: #fff;
+    padding: 19px 25px;
+    font-size: 14px;
+    line-height: 24px;
+    height: 62px;
+    width: 90%; }
+.s8_email_box button { 
+    display: inline-block;
+    cursor: pointer; 
+    width: 10%;
+    padding: 15px 20px;
+    height: 62px;
+    vertical-align: top;
+    margin: -21px;
+    background: #fff;
+    border-radius: 0 4px 4px 0;
+    border-color: #222; }
+.s8_email_box button i { color: #ff5519; 
+    font-size: 20px; }
+
+.his_step8 span { 
+    font-size: 11px; 
+    line-height: 14px; 
+    font-family: 'Roboto';
+    color: #6f6f6f;
+    font-weight: 400; 
+    padding-top: 30px; }
