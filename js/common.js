@@ -29,6 +29,13 @@
                 height: '92px',
                 opacity: '1'
             }, 500)
+            $('.login a').css({
+                backgroundColor: '#000',
+                color: '#fff',
+                opacity: '0'
+            }).stop().animate({
+                opacity: '1'
+            }, 500)
             flag=false;
         } else if ( sct===0 && !flag ) {
             $('#header').css({
@@ -38,7 +45,14 @@
             }).stop().animate({
                 height: '92px',
                 opacity: '1'
-            })
+            }, 500)
+            $('.login a').css({
+                backgroundColor: 'transparent',
+                color: '#000',
+                opacity: '0'
+            }).stop().animate({
+                opacity: '1'
+            }, 500)
         }
 
 
