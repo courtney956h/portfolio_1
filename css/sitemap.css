@@ -2,19 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 
-.sitemapBox .site_h { padding: 200px 0 100px; 
-    text-align: center; }
+.sitemapBox .site_h { padding: 250px 0 160px;
+    text-align: center; 
+    background-image: url(../images/bg3.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    width: 100%; }
 .sitemapBox h2 { 
     font-size: 50px;
     line-height: 70px;
-    font-family: '나눔 고딕'; }
+    font-family: '나눔 고딕'; 
+    color: #fff; }
 .sitemapBox span { 
     font-size: 13px;
     line-height: 20px; 
-    font-family: 'Montserrat'; }
+    font-family: 'Montserrat'; 
+    color: #fff; }
 
 
 .site_content { height: 800px; 
+    margin-top: 50px;
     padding: 30px 15px; 
     border-top: 2px solid #000; }
 .sitemapBox .siteTit {
@@ -40,4 +48,3 @@
 .sitemapBox .depth1 > li:hover {
     color: #000;
     font-weight: 600;}
-    
