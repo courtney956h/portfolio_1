@@ -282,53 +282,6 @@
 
 <script>
 
-// scroll animation 부분
-$(window).scroll(function() {
-    var sct = $(this).scrollTop()
-
-    // com_step1 animation
-    var cs1Near = $('.com_step1').offset().top - $(this).height()/2
-    if ( sct >= cs1Near ) {
-        $('.com_step1').addClass('on')
-    } else if ( sct===0 ) {
-        $('.com_step1').removeClass('on')
-    }
-
-    // com_step2 animation
-    var sc2Near = $('.com_step2').offset().top - $(this).height()/2
-    if ( sct >= sc2Near ) {
-        $('.com_step2').addClass('on')
-    } else if ( sct===0 ) {
-        $('.com_step2').removeClass('on')
-    }
-
-    // com_step3 animation
-    var sc3Near = $('.com_step3').offset().top - $(this).height()/2
-    if ( sct >= sc3Near ) {
-        $('.com_step3').addClass('on')
-    } else if ( sct===0 ) {
-        $('.com_step3').removeClass('on')
-    }
-
-    // com_step6 animation
-    var sc6Near = $('.com_step6').offset().top - $(this).height()/2
-    if ( sct >= sc6Near ) {
-        $('.com_step6').addClass('on')
-    } else if ( sct===0 ) {
-        $('.com_step6').removeClass('on')
-    }
-
-    // com_step7 animation
-    var sc7Near = $('.com_step7').offset().top - $(this).height()/2
-    if ( sct >= sc7Near ) {
-        $('.com_step7').addClass('on')
-    } else if ( sct===0 ) {
-        $('.com_step7').removeClass('on')
-    }
-})
-
-
-
 // slick 부분
 $('.logo_visual').slick({
     autoplay:true,
