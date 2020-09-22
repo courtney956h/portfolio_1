@@ -14,7 +14,7 @@
         });
     });
     
-    //scroll 부분
+    // scroll 부분
     var scrollSize = $(document).height() - $(window).height();
     var flag=true;
     $(window).on('scroll', function() {
@@ -39,7 +39,137 @@
                 opacity: '1'
             })
         }
-    })
+
+
+        // company.html 스크롤 이벤트 발생하는 함수 호출
+        // 스크롤 이벤트가 발생하면 html에서 #company_section을 찾아서 
+        // 해당 구역이 존재하면 함수를 호출해서 애니메이션 수행
+        if ( $('#newContainer').children().is('#company_section') ) {
+            comScroll()
+        }
+        // main.html 스크롤 이벤트 발생하는 함수 호출
+        if ( $('#newContainer').children().is('#main_section') ) {
+            mainScroll()
+        }
+
+
+
+    }) // 윈도우 스크롤이벤트 프로그램 끝
+
+
+
+    // company.html 스크롤 이벤트 발생
+    function comScroll() {
+        // com_step1 animation
+        var cs1Near = $('.com_step1').offset().top - $(this).height()/2
+        if ( sct >= cs1Near ) {
+            $('.com_step1').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step1').removeClass('on')
+        }
+
+        // com_step2 animation
+        var sc2Near = $('.com_step2').offset().top - $(this).height()/2
+        if ( sct >= sc2Near ) {
+            $('.com_step2').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step2').removeClass('on')
+        }
+
+        // com_step3 animation
+        var sc3Near = $('.com_step3').offset().top - $(this).height()/2
+        if ( sct >= sc3Near ) {
+            $('.com_step3').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step3').removeClass('on')
+        }
+
+        // com_step6 animation
+        var sc6Near = $('.com_step6').offset().top - $(this).height()/2
+        if ( sct >= sc6Near ) {
+            $('.com_step6').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step6').removeClass('on')
+        }
+
+        // com_step7 animation
+        var sc7Near = $('.com_step7').offset().top - $(this).height()/2
+        if ( sct >= sc7Near ) {
+            $('.com_step7').addClass('on')
+        } else if ( sct===0 ) {
+            $('.com_step7').removeClass('on')
+        }
+    }
+
+
+    // main.html 스크롤 이벤트 발생
+    function mainScroll() { 
+        // step1 scroll animation
+        var s1Near = $('.step1').offset().top - $(this).height()/2
+        if ( sct >= s1Near) {
+            $('.step1').addClass('on')
+        } else {
+            $('.step1').removeClass('on')
+        }
+
+        // step2 scroll animation
+        var s2Near = $('.step2').offset().top - $(this).height()/2
+        if ( sct >= s2Near) {
+            $('.container_fluid').addClass('on')
+        } else {
+            $('.container_fluid').removeClass('on')
+        }
+    
+        // step3 scroll animation
+        var s3Near = $('.step3').offset().top - $(this).height()/2
+        if ( sct >= s3Near ) {
+            $('.step3').addClass('on')
+        } else {
+            $('.step3').removeClass('on')
+        }
+
+        // step4 scroll animation
+        var s4Near = $('.step4').offset().top - $(this).height()/3
+        if ( sct >= s4Near ) {
+            $('.step4').addClass('on')
+        } else {
+            $('.step4').removeClass('on')
+        }
+    
+        // step5 scroll animation
+        var s5Near = $('.step5').offset().top - $(this).height()/2
+        if ( sct >= s5Near ) {
+            $('.step5').addClass('on')
+        } else {
+            $('.step5').removeClass('on')
+        }
+
+        // step6 scroll animation
+        var s6Near = $('.step6').offset().top - $(this).height()/2.5
+        if ( sct >= s6Near ) {
+            $('.step6').addClass('on')
+        } else {
+            $('.step6').removeClass('on')
+        }
+
+        // step8 scroll animation
+        var s8Near = $('.step8').offset().top - $(this).height()/2.5
+        if ( sct >= s8Near ) {
+            $('.step8').addClass('on')
+        } else {
+            $('.step8').removeClass('on')
+        }
+
+        // step9 scroll animation
+        var s9Near = $('.step9').offset().top - $(this).height()/2
+        if ( sct >= s9Near ) {
+            $('.step9').addClass('on')
+        } else {
+            $('.step9').removeClass('on')
+        }
+    }
+
+
 
 
     // mousewheel 이벤트 연결
