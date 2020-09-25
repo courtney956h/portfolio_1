@@ -145,7 +145,7 @@
 /* popup */
 #popupBox { position: absolute;
     top: 100px; 
-    left: 200px;
+    right: 180px;
     z-index: 999999;
     display: none;
 }
@@ -174,7 +174,7 @@
     padding: 8px;
     background: transparent; 
     transition: all 0.5s; }
-#popupBox .popuptxt:hover button { background: rgba(0,0,0,0.8); }
+#popupBox .popuptxt button:hover { background: rgba(0,0,0,0.8); }
 #popupBox .btnBox { position: absolute;
     bottom: 10px; left: 10px;
     color: #000;
