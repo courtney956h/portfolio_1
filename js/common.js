@@ -1,5 +1,20 @@
 (function($) {
 
+    // 레이어 popup 창 효과 (체크 클릭 후 닫기 버튼 누르면 사라짐)
+    if ( $.cookie('pop') != 'none' ) {
+        $('#popupBox').fadeIn(300)
+    }
+
+    $('#popupBox button').on('click', function(){
+        var bool = $('#popupBox input').prop('checked')
+        if ( bool ) {
+            $.cookie('pop', 'none', {expires:1})
+        }
+        $('#popupBox').fadeOut(300)
+    })
+
+
+
     // loading 화면
     $(".introAni").addClass("on");
     var timer = setInterval(function () {
@@ -208,7 +223,7 @@
 
 
     // mousewheel 이벤트 연결
-    $(".section").on("mousewheel", function (e, wh) {
+    $('section').on("mousewheel", function (e, wh) {
         var index = $(this).index()
         // 마우스 휠 올릴때
         if ( wh > 0 ) {
