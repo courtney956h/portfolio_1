@@ -412,9 +412,37 @@
     </div>
 </div>
 
+<div id="popupBox">
+    <button type="button" class="close">X</button>
+    <div class="popup_container">
+        <img src="images/popup_img.jpg" alt="">
+        <div class="popuptxt">
+            <h2>Interactive Design Project</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Eius, ut. Harum sint ullam cumque a fugit facilis, 
+                tempore quis libero itaque sit consequatur dolores quibusdam natus veniam dolor tempora laudantium!
+            </p>
+            <button type="submit">Lead more</button>
+        </div>
+    </div>
+    <div class="btnBox">
+        <input type="checkbox"> 오늘 하루 보지 않기
+    </div>
+</div>
 
 <script>
-    
+    // 레이어 popup 창 효과 (체크 클릭 후 닫기 버튼 누르면 사라짐)
+    if ( $.cookie('pop') != 'none' ) {
+        $('#popupBox').fadeIn(300)
+    }
+
+    $('#popupBox button').on('click', function(){
+        var bool = $('#popupBox input').prop('checked')
+        if ( bool ) {
+            $.cookie('pop', 'none', {expires:1})
+        }
+        $('#popupBox').fadeOut(300)
+    })
 
     // slick 부분
     $('.slideInner').slick({
