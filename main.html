@@ -102,25 +102,29 @@
                 <div class="countul row cf">
                     <div class="countli">
                         <div>
-                            <i class="far fa-heart"></i><br>280
+                            <i class="far fa-heart"></i><br>
+                            <span class="counter">280</span>
                             <p>Our Clients</p>
                         </div>
                     </div>
                     <div class="countli">
                         <div>
-                            <i class="fas fa-laptop"></i><br>540
+                            <i class="fas fa-laptop"></i><br>
+                            <span class="counter">540</span>
                             <p>Project Completed</p>
                         </div>
                     </div>
                     <div class="countli">
                         <div>
-                            <i class="fas fa-camera"></i><br>300
+                            <i class="fas fa-camera"></i><br>
+                            <span class="counter">300</span>
                             <p>Custom Design</p>
                         </div>
                     </div>
                     <div class="countli">
                         <div>
-                            <i class="far fa-comments"></i><br>8580
+                            <i class="far fa-comments"></i><br>
+                            <span class="counter">8580</span>
                             <p>Technical Project</p>
                         </div>
                     </div>
@@ -472,4 +476,10 @@
     fade:false,
     arrows:false,
     })
+
+    // counter up 효과
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2500
+    });
 </script>
