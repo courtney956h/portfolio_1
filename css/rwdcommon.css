@@ -23,7 +23,7 @@
     .nav .depth1 > li > i { display: block;
         position: absolute;
         top: 10px; right: 15px; 
-        font-size: 15px;}
+        font-size: 15px; }
 
     .nav .depth2 { z-index: 999999; 
         position: static; 
@@ -51,10 +51,22 @@
 }
 
 @media screen and (max-width:766px) {
+    .row { width: 750px; }
     .topmenu { position: relative; 
         height: 20px;
         display: none; }
-    
+    .h1NavWrap { padding-top: 20px; }
+    .nav { width: 200px; }
+    .nav .depth1 > li > a { display: block;
+        margin: 0px 5px; 
+        padding: 20px 15px 19px;
+        position: relative; }
+    .nav .depth1 > li > i { display: block;
+        position: absolute;
+        top: 20px; right: 15px; 
+        font-size: 15px; }
+
+
     .h1Nav .open_nav { display: block; 
         font-size: 25px;
         right: 10px;
