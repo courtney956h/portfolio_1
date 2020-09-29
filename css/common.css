@@ -29,7 +29,7 @@
     font-size: 12px;
     position: absolute; 
     top: 0; right: 0; }
-.nav .depth1 { padding: 0px 40px 0px 15px; }
+.nav .depth1 { padding-left: 15px; }
 .nav .depth1 > li { display: inline-block; 
     position: relative; }
 .nav .depth1 > li > a { display: block; 
@@ -61,7 +61,8 @@
     top: -2px; right: 0;
     display: block; 
     font-size: 18px;
-    padding: 24px 15px; }
+    padding: 24px 15px; 
+    display: none; }
 .h1Nav .close_nav { position: absolute;
     top: -2px; right: 0;
     display: block; 
