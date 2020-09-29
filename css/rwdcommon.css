@@ -8,10 +8,9 @@
 
 @media screen and (max-width:991px) {
     .row { width: 750px; }
-    .nav { display: none; }
+    .nav { display: none; width: 100%; }
     .nav .depth1 { padding: 72px 0; }
     .nav .depth1 > li { display: block;
-        width: 750px; 
         color: #fff;
         background: rgba(0,0,0,0.8);
         border-bottom: 1px solid rgba(224, 224, 224, 0.5);
@@ -41,12 +40,6 @@
         overflow: hidden; 
         transition: all 0.5s; }
 
-
-
-
-
-
-
     .h1Nav .open_nav { display: block; 
         font-size: 25px;
         right: 10px;
@@ -58,6 +51,18 @@
 }
 
 @media screen and (max-width:766px) {
+    .topmenu { position: relative; 
+        height: 20px;
+        display: none; }
+    
+    .h1Nav .open_nav { display: block; 
+        font-size: 25px;
+        right: 10px;
+        padding: 22px 15px; }
+    .h1Nav .close_nav { display: none; 
+        font-size: 26px;
+        right: 10px;
+        padding: 22px 15px; }
 
 }
 
