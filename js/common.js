@@ -17,6 +17,8 @@
             flag = true
         }
     }
+    
+    init()
 
     $(window).on('resize', function(){
         init()
