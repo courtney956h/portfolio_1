@@ -3,11 +3,11 @@
 
 
 @media screen and (max-width: 1199px) {
-    .row { width: 970px;}
+    .row { max-width: 970px;}
 }
 
 @media screen and (max-width:991px) {
-    .row { width: 750px; }
+    .row { max-width: 750px; }
     .nav { display: none; width: 100%; }
     .nav .depth1 { padding: 72px 0; }
     .nav .depth1 > li { display: block;
@@ -51,7 +51,7 @@
 }
 
 @media screen and (max-width:766px) {
-    .row { width: 750px; }
+    .row { max-width: 750px; }
     .topmenu { position: relative; 
         height: 20px;
         display: none; }
