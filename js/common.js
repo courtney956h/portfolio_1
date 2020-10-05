@@ -1,20 +1,73 @@
 (function($) {
 
-    /* 아코디언 이벤트 */
-    $('.depth1 > li').on('click', function(){
+    init()
+    var flag = true;
+    function init() {
+        var ww = $(window).width()
+        if ( ww>991 && flag ) {
+            $('.h1Nav .nav').show()
+            $('.depth1 > li').removeClass('on')
+            $('.open_nav, .close_nav, .depth2').hide()
+            $('html').addClass('pc').removeClass('mobile')
+            flag = false
+        } else if ( ww<=991 && !flag ) {
+            $('.open_nav').show()
+            $('.h1Nav .nav, .depth2').hide()
+            $('html').addClass('mobile').removeClass('pc')
+            flag = true
+        }
+    }
+
+    $(window).on('resize', function(){
+        init()
+    })
+
+
+
+
+
+    // 아코디언 이벤트
+    // $('.depth1 > li').on('click', function(){
+    //     $(this).toggleClass('on')
+    //     $(this).find('.depth2').slideToggle(300)
+    //     $(this).siblings().each(function(){ 
+    //         if ( $(this).find('.depth2').css('display') === 'block' ) {
+    //           $(this).find('.depth2').slideUp(300)
+    //           $(this).removeClass('on')
+    //         }
+    //     })
+    // })
+
+    // mobile 화면에서 1단계 메뉴 클릭시 2단계 메뉴 보이기
+    $('.depth1 > li').on('click',function(){
         $(this).toggleClass('on')
-        $(this).find('.depth2').slideToggle(300)
-        $(this).siblings().each(function(){ 
+        $(this).find('.depth2').stop().slideToggle(300)
+        $(this).siblings().each(function(){
             if ( $(this).find('.depth2').css('display') === 'block' ) {
-              $(this).find('.depth2').slideUp(300)
-              $(this).removeClass('on')
+                $(this).find('.depth2').slideUp(300)
+                $(this).removeClass('on')
             }
         })
     })
 
+    // pc 화면에서 1단계 메뉴 클릭시 2단계 메뉴 보이기
+    $('.depth1 > li').hover(
+        function(){
+            if ( $('html').hasClass('pc') ) {
+                $(this).find('.depth2').stop().slideDown(300)
+            }
+        },
+        function(){
+            if ( $('html').hasClass('pc') ) {
+                $(this).find('.depth2').stop().slideUp(300)
+            }
+        }
+    )
+
+
 
     // 메뉴 버튼
-    $('.h1Nav .open_nav').on('click', function(){
+    $('.open_nav').on('click', function(){
         $(this).next().stop().slideDown(300)
         $(this).hide()
         $(this).nextAll('.close_nav').css({
@@ -22,7 +75,7 @@
         })
     })
 
-    $('.h1Nav .close_nav').on('click', function() {
+    $('.close_nav').on('click', function() {
         $(this).prev().stop().slideUp(300)
         $(this).hide()
         $(this).prevAll('.open_nav').css({
