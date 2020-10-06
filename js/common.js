@@ -4,22 +4,25 @@
     var flag = true;
     function init() {
         var ww = $(window).width()
-        if ( ww>991 && flag ) {
-            $('.h1Nav .nav').show()
-            $('.depth1 > li').removeClass('on')
-            $('.open_nav, .close_nav, .depth2').hide()
+        if ( ww>991 ) {
             $('html').addClass('pc').removeClass('mobile')
-            flag = false
-        } else if ( ww<=991 && !flag ) {
-            $('.open_nav').show()
-            $('.h1Nav .nav, .depth2').hide()
+            if ( flag ) {
+                $('.h1Nav .nav').show()
+                $('.depth1 > li').removeClass('on')
+                $('.open_nav, .close_nav, .depth2').hide()
+                flag = false
+            }
+        } else if ( ww<=991 ) {
             $('html').addClass('mobile').removeClass('pc')
-            flag = true
+            if ( !flag ) {
+                $('.open_nav').show()
+                $('.h1Nav .nav, .depth2').hide()
+                flag = true
+            }
         }
     }
     
-    init()
-
+    
     $(window).on('resize', function(){
         init()
     })
