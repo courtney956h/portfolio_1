@@ -397,7 +397,7 @@
 .step7 { background: #1c1c1c; 
     padding: 130px 0; }
 .container_fluid .sample_vid { width: 50%;
-    float: left; padding: 0 15px; padding-top: 56.25%;
+    float: left; padding: 0 15px; padding-top: 33%;
     position: relative; }
 .container_fluid .sample_vid iframe { position: absolute;
     top: 0; left: 0; }
