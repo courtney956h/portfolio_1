@@ -23,13 +23,13 @@
 .slide .text { text-align: left; 
     position: absolute;
     top: 30%; left: 19%; 
+    width: 670px;
     color: #232323;
     font-weight: 'Montserrat';
     padding: 0 15px; 
-    width: 1104px; height: auto; }
+    height: auto; }
 .slide .text h2 { font-size: 70px;
     font-weight: bold; 
-    width: 627px; 
     margin-bottom: 35px; }
 .slide .text p { font-size: 18px; 
     font-family: 'Roboto';
@@ -396,9 +396,11 @@
 /* step7 start */
 .step7 { background: #1c1c1c; 
     padding: 130px 0; }
-.container_fluid .sample_vid { width: 50%; 
-    float: left; padding: 0 15px;
+.container_fluid .sample_vid { width: 50%;
+    float: left; padding: 0 15px; padding-top: 56.25%;
     position: relative; }
+.container_fluid .sample_vid iframe { position: absolute;
+    top: 0; left: 0; }
 /* .sample_vid i { color: #fff; 
     font-size: 60px; 
     width: 55%; 
