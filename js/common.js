@@ -330,24 +330,24 @@
     })
 
     // depth1 클릭시 서브페이지 연결
-    // $('.depth1 > li > a').on('click', function(e) {
-    //     e.preventDefault()
-    //     var url = $(this).attr('href')
-    //     $('#newContainer').remove()
-    //     $('#newBox').load(url)
-    // })
+    $('.depth1 > li > a').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#newContainer').remove()
+        $('#newBox').load(url)
+    })
 
     // depth2 클릭시 서브페이지 연결
-    // $('.depth2 > li > a').on('click', function(e) {
-    //     e.preventDefault()
-    //     var url = $(this).attr('href')
-    //     $('#newContainer').remove()
-    //     $('#newBox').load(url)
-    // })
+    $('.depth2 > li > a').on('click', function(e) {
+        e.preventDefault()
+        var url = $(this).attr('href')
+        $('#newContainer').remove()
+        $('#newBox').load(url)
+    })
 
-    // $('.h1Nav > h1 > a').on('click', function(){
-    //     $('#newContainer').remove()
-    //     $('#newBox').load('index.html')
-    // })
+    $('.h1Nav > h1 > a').on('click', function(){
+        $('#newContainer').remove()
+        $('#newBox').load('index.html')
+    })
 
 })(jQuery)
