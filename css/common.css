@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.row { width: 1170px; margin: 0 auto; }
+.row { max-width: 1170px; margin: 0 auto; }
 
 /* 헤더 부분 */
 #header { color: #000; 
@@ -84,11 +84,12 @@
     font-size: 12px;
     position: relative; }
 
-.inner .BizInfo { width: 24%; 
-    padding: 0 15px 0 15px; 
-    float: left;
-    border-right: 1px solid #363636; 
-    height: 199px; }
+.inner .innerlist { width: 24%; 
+    float: left; 
+    height: 199px; 
+    padding: 0 15px; 
+    border-right: 1px solid #363636; }
+
 .inner .BizInfo > a { display: inline-block; 
     font-weight: bold; 
     font-size: 30px; 
@@ -97,17 +98,11 @@
     margin: 24px 0; line-height: 20px; }
 .inner .BizInfo .sns > a { color: #fff; 
     font-size: 17px; 
-    margin-right: 20px; }
+    margin-right: 10px; }
 .inner .BizInfo .sns > a:hover { color: #ff5519; 
     transition: all 0.5s; }
 
 
-.inner .footerMenu { width: 24%; 
-    display: block; 
-    float: left;
-    padding: 0 15px 0 45px; 
-    border-right: 1px solid #363636; 
-    height: 199px; }
 .inner .footerMenu ul { display: block; 
     font-weight: bold;
     margin-bottom: 25px; }
@@ -120,12 +115,6 @@
     transition: all 0.5s; }
 
 
-.inner .companyInfo { width: 24%; 
-    display: block;
-    padding: 0 15px 0 45px; 
-    float: left;
-    border-right: 1px solid #363636; 
-    height: 199px; }
 .inner .companyInfo p { display: block; 
     font-weight: bold;
     margin-bottom: 10px; font-family: 'Montserrat'; }
@@ -134,12 +123,7 @@
 .inner .companyInfo span a:hover { color: #ff5519; 
     transition: all 0.5s; }
 
-
-.inner .portfolio { width: 24%; 
-    display: block;
-    padding: 0 15px 0 45px; 
-    float: left; 
-    height: 199px; }
+.inner .portfolio { border-right: none; }
 .inner .portfolio p { font-weight: bold; 
     font-family: 'Montserrat'; }
 
@@ -148,17 +132,17 @@
 .copy { font-size: 12px; 
     color: #6f6f6f;
     background: #141414; }
-.copyright { padding: 60px 0; }
-.copyright p:first-child { display: block; 
-    width: 49.5%;
+.copyright { padding: 60px 0;
+    position: relative; }
+.copyright p { width: 45%;
+    position: absolute;
+    bottom: 40%; 
     float: left; 
-    text-align: left; 
     padding: 0 15px; }
-.copyright p:last-child { display: block; 
-    width: 49.5%; 
-    float: left; 
-    text-align: right; 
-    padding: 0 15px; }
+.copyright p:first-child { left: 0;
+    text-align: left; }
+.copyright p:last-child { right: 0; 
+    text-align: right; }
 
 
 
