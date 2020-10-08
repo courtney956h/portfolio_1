@@ -55,6 +55,12 @@
         })
     })
 
+    // mobile 화면에서 user 메뉴
+    $('.user_nav > i').on('click', function() {
+        $(this).toggleClass('on')
+        $(this).find('.user_nav ul').stop().slideToggle(300)
+    })
+
     // pc 화면에서 1단계 메뉴 클릭시 2단계 메뉴 보이기
     $('.depth1 > li').hover(
         function(){
@@ -90,7 +96,12 @@
         $('.h1Nav .nav .depth1 > li').removeClass('on')
       })
 
-
+      $('.user_nav > i').on('click', function() {
+          $('.user_nav ul').stop().slideDown(300)
+          $('.user_nav ul').css({
+              display:'block'
+          })
+      })
 
 
 
