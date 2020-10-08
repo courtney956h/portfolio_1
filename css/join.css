@@ -69,3 +69,34 @@
     border: none; background: #000;
     font-size: 15px; font-family: 'Roboto';
     color: #fff; margin-bottom: 40px;}
+
+
+
+
+
+@media screen and (max-width:991px) { 
+    .join_box .join_content .content_box { margin: 20px 60px; 
+        text-align: left; }
+}
+
+@media screen and (max-width:766px) {
+    .join_h { background-image: url(../images/bg2.jpg); 
+        background-repeat: no-repeat; background-size: cover; 
+        background-position: center;
+        padding: 200px 0 120px; width: 100%; color: #fff; }
+    .join_h h2 { font-size: 40px; line-height: 70px; font-family: 'Montserrat'; }
+    .join_h p { font-size: 12px; line-height: 20px; font-family: 'Roboto'; }
+
+    .join_box .join_comment { text-align: left; 
+        padding: 0px 20px 100px 20px; }
+
+    .join_box .join_content { border: 1px solid #ccc; 
+        border-top: 2px solid #000; 
+        margin: 0 50px; }
+    .join_box .join_content .content_box { margin: 20px 40px; text-align: left; }
+
+    .join_content .w200 { width: 100%; }
+    .join_content .w370 { width: 100%; }
+
+
+}

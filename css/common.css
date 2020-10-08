@@ -57,15 +57,18 @@
     transition: all 0.5s; }
 .nav .depth2 > li > a:hover { color: #fff; }
 
+.h1Nav .user_nav { position: absolute;
+    top: -2px; right: 50px;
+    font-size: 18px;
+    padding: 24px 15px; 
+    display: none; }
 .h1Nav .open_nav { position: absolute;
     top: -2px; right: 0;
-    display: block; 
     font-size: 18px;
     padding: 24px 15px; 
     display: none; }
 .h1Nav .close_nav { position: absolute;
     top: -2px; right: 0;
-    display: block; 
     font-size: 18px;
     padding: 24px 15px; 
     display: none; }

@@ -31,12 +31,12 @@
 
 .login_box .login_content .idpw_box { padding-top: 20px; }
 .login_box .login_content .idpw_box label { display: none; }
-.login_box .login_content .idpw_box input { width: 50%;
+.login_box .login_content .idpw_box input { width: 300px;
     height: 50px; line-height: 40px;
     border: none; background: #f4f4f4;
     vertical-align: top; 
     margin-bottom: 10px; padding: 0 1em; }
-.login_box .login_content button { width: 50%;
+.login_box .login_content button { width: 300px;
     height: 50px; line-height: 40px; text-align: center;
     border: none; background: #000; color: #fff;
     vertical-align: top; }
@@ -52,3 +52,41 @@
 .login_box .find p { line-height: 1.75; }
 .login_box .find a { border: 1px solid #ccc; margin-top: 20px;
     padding: 8px 10px; display: inline-block; }
+
+
+
+
+@media screen and (max-width: 1199px) {
+    .login_box .login_content { border: 1px solid #ccc; 
+        border-top: 2px solid #000; margin: 0 200px;}
+}
+
+@media screen and (max-width:991px) {
+    .login_box .login_content { border: 1px solid #ccc; 
+        border-top: 2px solid #000; margin: 0 100px;}
+}
+
+@media screen and (max-width:766px) { 
+    .login_h { background-image: url(../images/bg1.jpg); 
+        background-repeat: no-repeat; background-size: cover; 
+        background-position: center;
+        padding: 200px 0 120px; width: 100%; }
+    .login_h h2 { font-size: 40px; line-height: 70px; font-family: 'Montserrat'; }
+    .login_h p { font-size: 12px; line-height: 20px; font-family: 'Roboto'; }
+
+    .login_box .login_comment { text-align: left; 
+        padding: 0px 20px 100px 20px; }
+
+    .login_box .login_content { border: 1px solid #ccc; 
+        border-top: 2px solid #000; margin: 0 50px;}
+
+    .login_box .login_content .idpw_box input { width: 220px;
+        height: 50px; line-height: 40px;
+        border: none; background: #f4f4f4;
+        vertical-align: top; 
+        margin-bottom: 10px; padding: 0 1em; }
+    .login_box .login_content button { width: 220px;
+        height: 50px; line-height: 40px; text-align: center;
+        border: none; background: #000; color: #fff;
+        vertical-align: top; }
+}
