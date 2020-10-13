@@ -7,15 +7,15 @@
             $('html').addClass('pc').removeClass('mobile')
             $('.h1Nav .nav').show()
             $('.depth1 > li').removeClass('on')
-            $('.open_nav, .close_nav, .depth2, .h1Nav .user_nav, .h1Nav .user ul').hide()
+            $('.open_nav, .close_nav, .depth2, .h1Nav .user_nav, .h1Nav .user').hide()
         } else if ( ww<=991 && ww>766 && !$('html').hasClass('mobile') ) {
             $('html').addClass('mobile').removeClass('pc mobile767')
             $('.open_nav').show()
-            $('.h1Nav .nav, .depth2, .h1Nav .user_nav,  .h1Nav .user ul').hide()
+            $('.h1Nav .nav, .depth2, .h1Nav .user_nav,  .h1Nav .user').hide()
         } else if ( ww<=766 && !$('html').hasClass('mobile767') ) {
             $('html').addClass('mobile767').removeClass('mobile')
             $('.h1Nav .user_nav, .open_nav').fadeIn(300)
-            $('.h1Nav .nav, .depth2, .close_nav, .h1Nav .user ul').fadeOut()
+            $('.h1Nav .nav, .depth2, .close_nav, .h1Nav .user').fadeOut()
         }
     }
 
@@ -57,7 +57,7 @@
 
     // mobile767 화면에서 user 메뉴
     $('.user_nav').on('click', function() {
-        $('.user ul').stop().slideToggle(300)
+        $('.user').stop().slideToggle(300)
     })
 
     // pc 화면에서 1단계 메뉴 hover시 2단계 메뉴 보이기
@@ -113,10 +113,6 @@
         $('.h1Nav .nav .depth1 > li').removeClass('on')
       })
 
-      $('.user_nav > i').on('click', function() {
-          $('.user_nav ul').stop().slideToggle(300)
-        
-      })
 
 
 
