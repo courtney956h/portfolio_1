@@ -40,11 +40,6 @@
         overflow: hidden; 
         transition: all 0.5s; }
 
-    .h1Nav .user_nav { position: absolute;
-        right: 50px;
-        font-size: 24px;
-        padding: 22px 15px;
-        display: none; }
     .h1Nav .open_nav { display: block; 
         font-size: 25px;
         right: 10px;
@@ -93,33 +88,26 @@
         top: 20px; right: 20px; 
         font-size: 15px; }
         
-    .h1Nav .user_nav { position: absolute;
-        right: 60px;
-        font-size: 30px;
-        padding: 22px 15px;
-        display: block; }
-    .h1Nav .user_nav ul { padding: 73px 0;
+    .h1Nav .user_nav { display: block; }
+    .h1Nav .user ul { padding: 73px 0;
         position: absolute; 
-        top: 1px; right: -60px; 
+        top: 0; right: 0; 
         width: 200px; 
         display: none; }
-    .h1Nav .user_nav ul li {
+    .h1Nav .user ul li {
         font-size: 12px;
         color: #fff;
         background: rgba(0,0,0,0.8);
         border-bottom: 1px solid rgba(224, 224, 224, 0.5);
         position: relative; }
-    .h1Nav .user_nav ul li a { 
+    .h1Nav .user ul li:last-child { border-bottom: none; }
+    .h1Nav .user ul li a { 
         display: block;
         font-weight: bold; 
         font-family: 'Montserrat';
         margin: 0px 5px; 
         padding: 20px 15px 19px;
         position: relative; }
-    .h1Nav .user_nav ul li i { display: block;
-        position: absolute;
-        top: 20px; right: 20px; 
-        font-size: 15px; }
 
 
     .h1Nav .open_nav { display: block; 
