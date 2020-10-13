@@ -63,7 +63,7 @@
     font-size: 30px;
     padding: 21px 15px;
     display: none; }
-.h1Nav .user ul { display: none; }
+.h1Nav .user { display: none; }
 .h1Nav .open_nav { position: absolute;
     top: -2px; right: 0;
     font-size: 18px;

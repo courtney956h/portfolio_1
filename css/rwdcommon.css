@@ -89,9 +89,8 @@
         font-size: 15px; }
         
     .h1Nav .user_nav { display: block; }
-    .h1Nav .user ul { padding: 73px 0;
-        position: absolute; 
-        top: 0; right: 0; 
+    .h1Nav .user { position: absolute; 
+        top: 73px; right: 0; 
         width: 200px; 
         display: none; }
     .h1Nav .user ul li {
