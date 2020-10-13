@@ -29,16 +29,16 @@
     $('.depth1 > li > a').on('click', function(e) {
         e.preventDefault();
         if ( $('html').hasClass('mobile') ) {
-            if ( $(this).next().is('.depth2') ) {
+            if ( $(this).next().next().is('.depth2') ) {
                 $(this).parent().toggleClass('on');
-                $(this).parent().find('.depth2').stop().slideToggle(300);
+                $(this).next().next().stop().slideToggle(300);
                 $(this).parent().siblings().each(function(){
                     if( $(this).find('.depth2').css('display') === 'block' ) {
                         $(this).find('.depth2').slideUp(300)
                         $(this).removeClass('on')
                     }
                 })
-            } else if ( !$(this).next().is('.depth2') ) {
+            } else if ( !$(this).next().next().is('.depth2') ) {
                 var url = $(this).attr('href');
                 $('#newContainer').remove();
                 $('#newBox').load(url);
