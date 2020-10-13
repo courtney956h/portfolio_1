@@ -1,5 +1,6 @@
 (function($) {
 
+    init()
     function init() {
         var ww = $(window).width()
         if ( ww>991 && !$('html').hasClass('pc')) {
@@ -28,7 +29,7 @@
     // 2단계 메뉴가 없으면 1단계 메뉴 페이지 로드시키기
     $('.depth1 > li > a').on('click', function(e) {
         e.preventDefault();
-        if ( $('html').hasClass('mobile') ) {
+        if ( $('html').hasClass('mobile') || $('html').hasClass('mobile767') ) {
             if ( $(this).next().next().is('.depth2') ) {
                 $(this).parent().toggleClass('on');
                 $(this).next().next().stop().slideToggle(300);
@@ -54,7 +55,7 @@
         
     })
 
-    // mobile 화면에서 user 메뉴
+    // mobile767 화면에서 user 메뉴
     $('.user_nav').on('click', function() {
         $('.user ul').stop().slideToggle(300)
     })
