@@ -58,9 +58,10 @@
 .nav .depth2 > li > a:hover { color: #fff; }
 
 .h1Nav .user_nav { position: absolute;
-    top: -2px; right: 50px;
-    font-size: 18px;
-    padding: 24px 15px; 
+    top: -2px;
+    right: 60px;
+    font-size: 30px;
+    padding: 21px 15px;
     display: none; }
 .h1Nav .open_nav { position: absolute;
     top: -2px; right: 0;
