@@ -8,6 +8,8 @@
 
 @media screen and (max-width:991px) {
     .row { max-width: 750px; }
+
+    /* header */
     .nav { display: none; width: 100%; }
     .nav .depth1 { padding: 72px 0; }
     .nav .depth1 > li { display: block;
@@ -69,6 +71,7 @@
 }
 
 @media screen and (max-width:766px) {
+    /* header */
     .topmenu .login { position:absolute; 
         top:10px; right:0; 
         color:#000;
