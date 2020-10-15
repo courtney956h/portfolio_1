@@ -197,8 +197,12 @@
         text-align: center; 
         display: block; }
 
+    .sample_h .bottom_btn { position: relative; }
     .sample_h .bottom_btn a { padding: 10px 35px; 
-        margin: 30px 36% 0 36%; }
+        position: absolute;
+        bottom: -30px;
+        left: 50%; 
+        transform: translate(-50%, 0);}
 
 
     /* step8 */
@@ -230,9 +234,9 @@
         line-height: 28px; }
 
     .step9 .new_gli { width: 100%; 
-        margin: 0 0px;;
+        margin: 0 0px;
         margin-bottom: 30px; }
-    .step9 .new_gul .new_gli .news { height: 285px; 
+    .step9 .new_gul .new_gli .news { height: 100%; 
         margin-bottom: 20px; }
 
     .step9 .new_gul .new_gli > p { text-align: center; }
