@@ -641,6 +641,11 @@
     top: 10px; right: 10px;
     background: transparent;
     color: #fff; }
+.popup_container { position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+.popup_container img { width: 100%;}   
 #popupBox .popuptxt { position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);

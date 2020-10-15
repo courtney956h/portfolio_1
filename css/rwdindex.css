@@ -218,7 +218,7 @@
         border: 1px solid #ededed; 
         margin: 0 5px;
         display: inline-block;  
-        width: 100%; 
+        width: 32%; 
         background: #fff; }
     .step8 .c_rolling .clients .clients_re { 
         padding: 30px }
@@ -251,8 +251,13 @@
 
     /* popup */
     #popupBox { position: absolute;
-        top: 50px; 
-        right: -20px;
-        transform: scale(0.85);}
-    
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        z-index: 999999;
+        display: none; }
+    .popup_container { position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
 }
