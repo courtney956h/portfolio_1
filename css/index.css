@@ -633,22 +633,17 @@
 /* popup */
 #popupBox { position: absolute;
     top: 100px; 
-    right: 180px;
-    z-index: 999999;
-    display: none;
+    right: 180px; max-width:450px; width:100%; 
+    z-index: 999999; border:1px solid #000;
 }
+#popupBox img { max-width:100% }
 #popupBox .close { position: absolute;
     top: 10px; right: 10px;
     background: transparent;
     color: #fff; }
-.popup_container { position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-.popup_container img { width: 100%;}   
 #popupBox .popuptxt { position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30px; left: 30px;
+    bottom:30px; right:30px;
     border: 1px solid #eee; 
     padding: 50px; 
     background: rgba(0,0,0,0.3);}
