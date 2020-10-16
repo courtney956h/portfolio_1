@@ -263,6 +263,11 @@
     #popupBox .popuptxt h2 { font-size: 30px;
         color: #eee; 
         font-family: 'Montserrat';
-        margin-bottom: 0px; text-align:center; padding-top:25% }
+        margin-bottom: 0px; 
+        text-align:center; 
+        padding-top:30% }
     #popupBox .popuptxt p { display:none }
+    #popupBox .popuptxt button { 
+        margin: 40px 38% 0;
+        padding: 8px; }
 }
