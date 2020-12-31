@@ -10,6 +10,8 @@
     .row { max-width: 750px; }
 
     /* header */
+    .topmenu { height: 10px; }
+
     .nav { display: none; width: 100%; }
     .nav .depth1 { padding: 72px 0; }
     .nav .depth1 > li { display: block;
@@ -126,7 +128,7 @@
     /* footer */
     #footer .inner { display: block; 
         padding: 10% 0; 
-        height: 720px;
+        height: 820px;
         font-family: 'Roboto'; 
         color: #6f6f6f; 
         line-height: 20px; 
