@@ -667,3 +667,26 @@
     bottom: 10px; left: 10px;
     color: #000;
     font-size: 13px; }
+
+
+/* popupBox2 */
+#popupBox2 { position: absolute;
+    top: 180px; 
+    left: 180px; 
+    max-width: 400px; 
+    width: 100%; 
+    background: #fff; 
+    color: #000;
+    z-index: 9; }
+#popupBox2 .close { position: absolute;
+    top: 20px; right: 20px;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    z-index: 9999; }
+#popupBox2 .popuptxt { padding: 80px 40px; 
+    text-align: center;
+    font-size: 16px; }
+#popupBox2 .btnBox { position: absolute;
+    bottom: 10px; left: 20px;
+    font-size: 13px; }
