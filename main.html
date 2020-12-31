@@ -440,20 +440,34 @@
     </div>
 </div>
 
+<div id="popupBox2">
+    <button type="button" class="close">X</button>
+    <div class="popup_container">
+        <div class="popuptxt">
+            <p>비상업적인<br>
+                포트폴리오 구현용으로<br>
+                제작한 사이트입니다.</p>
+        </div>
+    </div>
+    <div class="btnBox">
+        <input type="checkbox"> 오늘 하루 보지 않기
+    </div>
+</div>
+
 
 
 <script>
     // 레이어 popup 창 효과 (체크 클릭 후 닫기 버튼 누르면 사라짐)
     if ( $.cookie('pop') != 'none' ) {
-        $('#popupBox').fadeIn(300)
+        $('#popupBox, #popupBox2').fadeIn(300)
     }
 
-    $('#popupBox button').on('click', function(){
-        var bool = $('#popupBox input').prop('checked')
+    $('#popupBox button, #popupBox2 button').on('click', function(){
+        var bool = $('#popupBox input, #popupBox2 input').prop('checked')
         if ( bool ) {
             $.cookie('pop', 'none', {expires:1})
         }
-        $('#popupBox').fadeOut(300)
+        $('#popupBox, #popupBox2').fadeOut(300)
     })
 
     // slick 부분
