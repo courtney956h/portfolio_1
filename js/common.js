@@ -190,6 +190,13 @@
             }, 800, 'linear')
         })
 
+        // godown 버튼 클릭시 down
+        $('.down_btn').on('click', function() {
+            $('html, body').stop().animate({
+                scrollTop:'500px'
+            }, 800, 'linear')
+        })
+
 
 
         // company.html 스크롤 이벤트 발생하는 함수 호출
